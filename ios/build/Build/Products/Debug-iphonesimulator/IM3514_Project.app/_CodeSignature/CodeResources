@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		q2KRDCjhmfNQND4cVfTHtJgmyvI=
+		DBBk3OEDmBU9ex+MSM6ERvXVgFM=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -40,6 +40,47 @@
 		<data>
 		SyvObHkkk6SlcWtv7C2+/olJLD8=
 		</data>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<data>
+		8CN5cCzwKl0+7ieNPMN/SawZQA8=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<data>
+		Cwsl4MoHt6dTvyYXRy5C2x7Kd88=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<data>
+		UU+vWjYvpE8lKAxV1lE2tUbIZA0=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<data>
+		znuKt4UiTOJWwzrlgwaYX94o/a4=
+		</data>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<data>
+		uPxPInP5h9+ERgCm8NCXpuuMEmg=
+		</data>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<data>
+		aHoR6mqqp0XWLqiw49+MRuFNQLk=
+		</data>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		2JoYDV6DTsckEmF+l3Ruo1S1Iqk=
+		</data>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<data>
+		DmGu9k7yBOLSfwtyNbn3zYir630=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		ZjBssZxGQk4tEEikBfTfj7/UgQs=
@@ -64,6 +105,26 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>PlugIns/IM3514_ProjectTests.xctest.dSYM/Contents/Info.plist</key>
+		<data>
+		LVM7y9/mY8OEAmjminD+adwmcr0=
+		</data>
+		<key>PlugIns/IM3514_ProjectTests.xctest.dSYM/Contents/Resources/DWARF/IM3514_ProjectTests</key>
+		<data>
+		urHEND74H8sVFrZt2NFFCnS/tm4=
+		</data>
+		<key>PlugIns/IM3514_ProjectTests.xctest/IM3514_ProjectTests</key>
+		<data>
+		ycSmbgyeLWtjXhE/oFoO4pJf7bY=
+		</data>
+		<key>PlugIns/IM3514_ProjectTests.xctest/Info.plist</key>
+		<data>
+		Dg8GCCGNRt3QLQosreu/de4Qxtc=
+		</data>
+		<key>PlugIns/IM3514_ProjectTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		gcq1gqBQ7MhJbqp3LB2vDKJZ6Ok=
+		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
 		n/uBpaEREuKS8swyPphIa61ZdZk=
@@ -79,11 +140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q2KRDCjhmfNQND4cVfTHtJgmyvI=
+			DBBk3OEDmBU9ex+MSM6ERvXVgFM=
 			</data>
 			<key>hash2</key>
 			<data>
-			T+yeHu5vrrpZTnQfaZofzEkUH9PfdwenKp07LzuPfTY=
+			zyfZ+fYw8roYiQ3Q1kK5nOq7xIa2o0oz6Iqy7PwdcIg=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -174,6 +235,107 @@
 			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
 			</data>
 		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8CN5cCzwKl0+7ieNPMN/SawZQA8=
+			</data>
+			<key>hash2</key>
+			<data>
+			/R1Uy1RZ7ljX2V8ZHMhD4g8ieWHns9sj34YDK2McvfY=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cwsl4MoHt6dTvyYXRy5C2x7Kd88=
+			</data>
+			<key>hash2</key>
+			<data>
+			IvG0kD54lYvEZzfjVmXtrtBdydTUy1uFZkZXUddfTzY=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UU+vWjYvpE8lKAxV1lE2tUbIZA0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ja3vToXIdN/BmsoAh4U4btDVl5lKbzndKf99CyxV6K4=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			znuKt4UiTOJWwzrlgwaYX94o/a4=
+			</data>
+			<key>hash2</key>
+			<data>
+			napzzKlhgK6Qoqz8QO+9TkyuIsW5V+s6GmClALe2lT4=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uPxPInP5h9+ERgCm8NCXpuuMEmg=
+			</data>
+			<key>hash2</key>
+			<data>
+			N77/gSJpnPT4ryPaR4IJ55aYyiiMCKjlq79qrCmGxU8=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aHoR6mqqp0XWLqiw49+MRuFNQLk=
+			</data>
+			<key>hash2</key>
+			<data>
+			unqlGEn5cq6B36PWWq/mAoeeub7L9yZ3vWK7mP9EscQ=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2JoYDV6DTsckEmF+l3Ruo1S1Iqk=
+			</data>
+			<key>hash2</key>
+			<data>
+			OXS9XX1oATlfFoPHZbc7OGt7HUXfXzNrCz28TkkBo/g=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DmGu9k7yBOLSfwtyNbn3zYir630=
+			</data>
+			<key>hash2</key>
+			<data>
+			2hnwNPgdaewT28DbTqe0Gpaccdc2akBF8IjnGtISc58=
+			</data>
+		</dict>
 		<key>Ionicons.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -216,6 +378,61 @@
 			<key>hash2</key>
 			<data>
 			8KI41G1nSeYBwS8g+PwDIB8Ze5/jR75MLJRP/FxLYDU=
+			</data>
+		</dict>
+		<key>PlugIns/IM3514_ProjectTests.xctest.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LVM7y9/mY8OEAmjminD+adwmcr0=
+			</data>
+			<key>hash2</key>
+			<data>
+			eUE0gHaczNdPnaLGZgeCko12qqaJ7Z+7Tz4ZdPrjJ2Y=
+			</data>
+		</dict>
+		<key>PlugIns/IM3514_ProjectTests.xctest.dSYM/Contents/Resources/DWARF/IM3514_ProjectTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			urHEND74H8sVFrZt2NFFCnS/tm4=
+			</data>
+			<key>hash2</key>
+			<data>
+			c06jdH/4mxn4niq4EBKss8iGp9Cuv9UDHc0AqJW0jCA=
+			</data>
+		</dict>
+		<key>PlugIns/IM3514_ProjectTests.xctest/IM3514_ProjectTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ycSmbgyeLWtjXhE/oFoO4pJf7bY=
+			</data>
+			<key>hash2</key>
+			<data>
+			8rZO4LGUxLSvR8wbkhFKOfeOBhjrdPmh+iZzTayAIxI=
+			</data>
+		</dict>
+		<key>PlugIns/IM3514_ProjectTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dg8GCCGNRt3QLQosreu/de4Qxtc=
+			</data>
+			<key>hash2</key>
+			<data>
+			4z7spCYbTwkSqG5VEhN1i4lsrve3mrKw5/RjfcVGzBs=
+			</data>
+		</dict>
+		<key>PlugIns/IM3514_ProjectTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gcq1gqBQ7MhJbqp3LB2vDKJZ6Ok=
+			</data>
+			<key>hash2</key>
+			<data>
+			CIrSkAkNT27pbCuIDUgMLZFVjZCBbqj0SZAbA4TJ3y0=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>

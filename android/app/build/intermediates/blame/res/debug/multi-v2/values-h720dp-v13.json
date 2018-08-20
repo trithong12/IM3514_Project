@@ -4,15 +4,8 @@
             "outputFile": "/Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/aed692e77b90f735f999188add9416da/res/values-h720dp/values-h720dp.xml",
+                    "source": "/Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "283",
-                        "endColumns": "66",
-                        "endOffsets": "345"
-                    },
-                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",

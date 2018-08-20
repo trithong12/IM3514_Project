@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Aug 20 17:40:40 CST 2018
+#Mon Aug 20 20:00:26 CST 2018
 5.base=/Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/build/intermediates/assets/debug
 22.path=lib/armeabi-v7a/libgnustl_shared.so
 32.set=NATIVE_RESOURCE

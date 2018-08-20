@@ -5,9 +5,14 @@ INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Proj
 INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
 MERGED from [:react-native-vector-icons] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-20:12
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/aed692e77b90f735f999188add9416da/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-v4:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b9f390f329683f1b5b83d9c0168949c4/AndroidManifest.xml:17:1-24:12
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:2:1-14:12
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/23d9d1a1d6462b5eaf991b7f780886fb/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/d74acdd6341bfb45beb84c0884362d93/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/62d40531929f5c84abe97a3a8badfd73/AndroidManifest.xml:17:1-31:12
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/fe90c7171c3e777d7b8a12acc761af6b/AndroidManifest.xml:10:1-18:12
 MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/f8e9839a118adb0bf4b22fa901240785/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/925ec852bdb26642c3dd65f391e9a0dd/AndroidManifest.xml:2:1-9:12
@@ -17,6 +22,15 @@ MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/tonychen/.gradle/caches/tr
 MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/83c8767decc4dedb1050d668281e4761/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/9eff6c26b37d9f9d3c3e77672511aff5/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/7e8f1d453a445561e1c6fc99becf9672/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/8c3f4fb9b540b812e59d531ed10a1e4a/AndroidManifest.xml:17:1-26:12
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/01dd3794d9b40faf757e4ebe926cd7a2/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/5982411d455c2efe848921643f05b9e7/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/2e258c78db2dd4b81b244744400d21a5/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/629ea5c786af901cd2eb9261cfc62317/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/a8cdcb4d92b6867d74b423085f3566d3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/eb36c328fd93589b6ea179f15f19cc1f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bc7678bbfe67e365d344f4738983ff3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:17:1-31:12
 INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
@@ -46,16 +60,42 @@ MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/cac
 		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:5:22-75
 application
 ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:13:5-20
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/aed692e77b90f735f999188add9416da/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/aed692e77b90f735f999188add9416da/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b9f390f329683f1b5b83d9c0168949c4/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b9f390f329683f1b5b83d9c0168949c4/AndroidManifest.xml:22:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:12:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/23d9d1a1d6462b5eaf991b7f780886fb/AndroidManifest.xml:11:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/23d9d1a1d6462b5eaf991b7f780886fb/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/d74acdd6341bfb45beb84c0884362d93/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/d74acdd6341bfb45beb84c0884362d93/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/62d40531929f5c84abe97a3a8badfd73/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/62d40531929f5c84abe97a3a8badfd73/AndroidManifest.xml:29:5-20
 MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/e7d78601bd8d6dabf16d034e4b383d45/AndroidManifest.xml:3:3-17
 MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/e7d78601bd8d6dabf16d034e4b383d45/AndroidManifest.xml:3:3-17
 MERGED from [org.webkit:android-jsc:r174650] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b1eb59c5011249d483f13e004c10c95a/AndroidManifest.xml:2:3-17
 MERGED from [org.webkit:android-jsc:r174650] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b1eb59c5011249d483f13e004c10c95a/AndroidManifest.xml:2:3-17
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/01dd3794d9b40faf757e4ebe926cd7a2/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/01dd3794d9b40faf757e4ebe926cd7a2/AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/5982411d455c2efe848921643f05b9e7/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/5982411d455c2efe848921643f05b9e7/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/2e258c78db2dd4b81b244744400d21a5/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/2e258c78db2dd4b81b244744400d21a5/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/629ea5c786af901cd2eb9261cfc62317/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/629ea5c786af901cd2eb9261cfc62317/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/a8cdcb4d92b6867d74b423085f3566d3/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/a8cdcb4d92b6867d74b423085f3566d3/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/eb36c328fd93589b6ea179f15f19cc1f/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/eb36c328fd93589b6ea179f15f19cc1f/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bc7678bbfe67e365d344f4738983ff3/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bc7678bbfe67e365d344f4738983ff3/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:29:5-20
 	android:label
 		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:9:7-39
 	android:icon
@@ -88,6 +128,10 @@ ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project
 		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:20:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:23:7-84
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
+	android:exported
+		ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-37
 	android:name
 		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:23:17-81
 uses-sdk
@@ -96,12 +140,22 @@ INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Proj
 INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
 MERGED from [:react-native-vector-icons] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/aed692e77b90f735f999188add9416da/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/aed692e77b90f735f999188add9416da/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b9f390f329683f1b5b83d9c0168949c4/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/b9f390f329683f1b5b83d9c0168949c4/AndroidManifest.xml:20:5-43
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:8:5-10:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/23d9d1a1d6462b5eaf991b7f780886fb/AndroidManifest.xml:7:5-9:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/23d9d1a1d6462b5eaf991b7f780886fb/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/d74acdd6341bfb45beb84c0884362d93/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/d74acdd6341bfb45beb84c0884362d93/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/62d40531929f5c84abe97a3a8badfd73/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/62d40531929f5c84abe97a3a8badfd73/AndroidManifest.xml:21:5-23:54
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/fe90c7171c3e777d7b8a12acc761af6b/AndroidManifest.xml:14:5-16:41
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/fe90c7171c3e777d7b8a12acc761af6b/AndroidManifest.xml:14:5-16:41
 MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/f8e9839a118adb0bf4b22fa901240785/AndroidManifest.xml:5:5-7:41
@@ -118,8 +172,28 @@ MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/tonychen/.grad
 MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/9eff6c26b37d9f9d3c3e77672511aff5/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/7e8f1d453a445561e1c6fc99becf9672/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/7e8f1d453a445561e1c6fc99becf9672/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/8c3f4fb9b540b812e59d531ed10a1e4a/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/8c3f4fb9b540b812e59d531ed10a1e4a/AndroidManifest.xml:20:5-43
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/01dd3794d9b40faf757e4ebe926cd7a2/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/01dd3794d9b40faf757e4ebe926cd7a2/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/5982411d455c2efe848921643f05b9e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/5982411d455c2efe848921643f05b9e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/2e258c78db2dd4b81b244744400d21a5/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/2e258c78db2dd4b81b244744400d21a5/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/629ea5c786af901cd2eb9261cfc62317/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/629ea5c786af901cd2eb9261cfc62317/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/a8cdcb4d92b6867d74b423085f3566d3/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/a8cdcb4d92b6867d74b423085f3566d3/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/eb36c328fd93589b6ea179f15f19cc1f/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/eb36c328fd93589b6ea179f15f19cc1f/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bc7678bbfe67e365d344f4738983ff3/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bc7678bbfe67e365d344f4738983ff3/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:21:5-23:58
 INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
 		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
@@ -128,6 +202,40 @@ INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Proj
 		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
 		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
+activity#com.reactnativenavigation.controllers.NavigationActivity
+ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-14:86
+	android:configChanges
+		ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-83
+	android:name
+		ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-84
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/d74acdd6341bfb45beb84c0884362d93/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/d74acdd6341bfb45beb84c0884362d93/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/62d40531929f5c84abe97a3a8badfd73/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/62d40531929f5c84abe97a3a8badfd73/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/8c3f4fb9b540b812e59d531ed10a1e4a/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/8c3f4fb9b540b812e59d531ed10a1e4a/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/5982411d455c2efe848921643f05b9e7/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/5982411d455c2efe848921643f05b9e7/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/2e258c78db2dd4b81b244744400d21a5/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/2e258c78db2dd4b81b244744400d21a5/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/629ea5c786af901cd2eb9261cfc62317/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/629ea5c786af901cd2eb9261cfc62317/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/a8cdcb4d92b6867d74b423085f3566d3/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/a8cdcb4d92b6867d74b423085f3566d3/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/eb36c328fd93589b6ea179f15f19cc1f/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/eb36c328fd93589b6ea179f15f19cc1f/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bc7678bbfe67e365d344f4738983ff3/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bc7678bbfe67e365d344f4738983ff3/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:26:9-47
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
