@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Item, Input, Label, Button, Text, Picker, Icon } from 'native-base';
-import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, ScrollView } from 'react-native';
 
 import MainTabs from '../MainTabs/MainTabs';
 
@@ -30,9 +30,9 @@ export default class RegisterScreen extends Component {
         return (
             // 按外面會收起鍵盤
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-                <View style={{ flex: 1 }}>
-                    <KeyboardAvoidingView style={styles.container} behavior="padding">
-                        <Text style={{ fontSize: 22, fontFamily: "Arial" }}>Please fill this form to register</Text>
+                <ScrollView>
+                <View style={styles.container}>
+                    <KeyboardAvoidingView behavior="padding">
                         <Form style={styles.form}>
                             <Item floatingLabel>
                                 <Label>Email</Label>
@@ -90,6 +90,7 @@ export default class RegisterScreen extends Component {
                                     getRef={(input) => this.officeInput = input}
                                     keyboardType="numeric"
                                     returnKeyType="go"
+                                    onSubmitEditing={(event) => this.registerHandler()}
                                     value={this.state.office}
                                     onChangeText={(inputOffice) => this.setState({office: inputOffice})}
                                 />
@@ -106,7 +107,8 @@ export default class RegisterScreen extends Component {
                             </View>
                         </Form>
                     </KeyboardAvoidingView>
-                </View>
+                    </View>
+                </ScrollView>
             </TouchableWithoutFeedback>
         );
     }
