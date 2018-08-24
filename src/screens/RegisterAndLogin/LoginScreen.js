@@ -1,14 +1,38 @@
 import React, { Component } from 'react';
-import { Container, Content, Form, Item, Input, Label, Body, Button, Text } from 'native-base';
+import { Navigation } from 'react-native-navigation';
+import { Form, Item, Input, Label, Button, Text } from 'native-base';
 import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard } from 'react-native';
+
+import MainTabs from '../MainTabs/MainTabs';
+import RegisterScreen from '../RegisterAndLogin/RegisterScreen';
+
 export default class LoginScreen extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            email: "",
+            password: "",
+        };
+    }
+
+    loginHandler = () => {
+        MainTabs();
+    }
+    goToRegisterHandler = () => {
+        this.props.navigator.push({
+            screen: "IM3514_Project.RegisterScreen",
+            title: "Registeration",
+            animationType: 'fade'
+        });
+    }
+
     render() {
         return (
             // 按外面會收起鍵盤
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={{ flex: 1 }}>
                     <KeyboardAvoidingView style={styles.container} behavior="padding">
-                        <Text style={{ fontSize: 22, fontFamily: "Arial" }}>Login</Text>
+                        <Text style={{ fontSize: 22, fontFamily: "Arial" }}>Please login!</Text>
                         <Form style={styles.form}>
                             <Item floatingLabel>
                                 <Label>Email</Label>
@@ -18,7 +42,8 @@ export default class LoginScreen extends Component {
                                     autoCorrect={false}
                                     returnKeyType="next"
                                     onSubmitEditing={(event) => this.passwordInput._root.focus()}
-                                    blurOnSubmit={false}
+                                    value={this.state.email}
+                                    onChangeText={(inputEmail) => this.setState({email: inputEmail})}
                                 />
                             </Item>
                             <Item floatingLabel last>
@@ -29,15 +54,24 @@ export default class LoginScreen extends Component {
                                     autoCorrect={false}
                                     getRef={(input) => this.passwordInput = input}
                                     returnKeyType="go"
+                                    value={this.state.password}
+                                    onChangeText={(inputPassword) => this.setState({password: inputPassword})}
                                 />
                             </Item>
 
                             <View style={styles.buttonContainer}>
-                                <Button bordered style={styles.loginButton}>
+                                <Button
+                                    bordered
+                                    style={styles.loginButton}
+                                    onPress={this.loginHandler}
+                                >
                                     <Text>Login</Text>
                                 </Button>
-                                <Button bordered style={styles.loginButton}>
-                                    <Text>Sign up</Text>
+                                <Button 
+                                bordered 
+                                style={styles.loginButton}
+                                onPress={this.goToRegisterHandler}>
+                                    <Text>Register an Account</Text>
                                 </Button>
                             </View>
                         </Form>
@@ -60,12 +94,12 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     buttonContainer: {
-        flexDirection: 'row',
+        flexDirection: 'column',
     },
     loginButton: {
         padding: 10,
-        // marginTop: 20,
-        margin: 20,
+        marginTop: 10,
+        margin: 5,
         alignSelf: 'center',
     }
 });
