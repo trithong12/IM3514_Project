@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Card, CardItem, Text, Body } from "native-base";
 export default class RobotScreen extends Component {
+  constructor(props) {
+    super(props);
+    this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent)
+  }
+
+  onNavigatorEvent = event => {
+    if (event.type === "NavBarButtonPress" && event.id === "sideDrawerToggle") {
+      this.props.navigator.toggleDrawer({
+        side: "left",        
+      });
+    }
+  }
+  
   render() {
     return (
       <Container>
