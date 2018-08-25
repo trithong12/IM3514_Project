@@ -117,11 +117,10 @@ export default class RegisterScreen extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        // justifyContent: 'center',
         alignItems: 'center',
     },
     form: {
-        width: "80%",
+        width: "90%",
         alignItems: 'center'
     },
     buttonContainer: {

@@ -59,7 +59,7 @@ export default class ProfileScreen extends Component {
             </ListItem>
             <ListItem>
               <Left>
-                <Text>Username: </Text>
+                <Text>Name: </Text>
                 <Text>Tran Tri Thong</Text>
               </Left>
               <TouchableOpacity onPress={this.changeNameHandler}>
