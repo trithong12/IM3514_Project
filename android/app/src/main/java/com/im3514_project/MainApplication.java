@@ -3,6 +3,8 @@ package com.im3514_project;
 // import android.app.Application;
 
 // import com.facebook.react.ReactApplication;
+import com.amazonaws.RNAWSCognitoPackage;
+import com.airlabsinc.RNAWSCognitoPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 // import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,6 +26,8 @@ import java.util.List;
 //     protected List<ReactPackage> getPackages() {
 //       return Arrays.<ReactPackage>asList(
 //           new MainReactPackage(),
+            new RNAWSCognitoPackage(),
+            new RNAWSCognitoPackage(),
 //             new VectorIconsPackage()
 //       );
 //     }

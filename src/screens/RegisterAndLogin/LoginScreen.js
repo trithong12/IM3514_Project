@@ -3,8 +3,9 @@ import { Navigation } from 'react-native-navigation';
 import { Form, Item, Input, Label, Button, Text } from 'native-base';
 import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard } from 'react-native';
 
+import { AuthenticationDetails, CognitoUser } from 'amazon-cognito-identity-js';
+import userPool from '../../AWS/cognito_config';
 import MainTabs from '../MainTabs/MainTabs';
-import RegisterScreen from '../RegisterAndLogin/RegisterScreen';
 
 export default class LoginScreen extends Component {
     constructor(props) {
@@ -16,7 +17,27 @@ export default class LoginScreen extends Component {
     }
 
     loginHandler = () => {
-        MainTabs();
+        const authenticationDetails = new AuthenticationDetails({
+            Username: this.state.email,
+            Password: this.state.password
+        });
+        const cognitoUser = new CognitoUser({
+            Username: this.state.email,
+            Pool: userPool
+        });
+        cognitoUser.authenticateUser(authenticationDetails, {
+            onSuccess: (result) => {
+                console.log('onSuccess', result)
+                console.log('access token + ' + result.getAccessToken().getJwtToken());
+                MainTabs();
+            },
+            onFailure: (err) => {
+                console.log('onFailure', err)
+            },
+            mfaRequired: (codeDeliveryDetails) => {
+                console.log('mfaRequired', codeDeliveryDetails)
+            }
+        });
     }
     goToRegisterHandler = () => {
         this.props.navigator.push({
@@ -43,7 +64,7 @@ export default class LoginScreen extends Component {
                                     returnKeyType="next"
                                     onSubmitEditing={(event) => this.passwordInput._root.focus()}
                                     value={this.state.email}
-                                    onChangeText={(inputEmail) => this.setState({email: inputEmail})}
+                                    onChangeText={(inputEmail) => this.setState({ email: inputEmail })}
                                 />
                             </Item>
                             <Item floatingLabel last>
@@ -55,7 +76,7 @@ export default class LoginScreen extends Component {
                                     getRef={(input) => this.passwordInput = input}
                                     returnKeyType="go"
                                     value={this.state.password}
-                                    onChangeText={(inputPassword) => this.setState({password: inputPassword})}
+                                    onChangeText={(inputPassword) => this.setState({ password: inputPassword })}
                                 />
                             </Item>
 
@@ -67,10 +88,10 @@ export default class LoginScreen extends Component {
                                 >
                                     <Text>Login</Text>
                                 </Button>
-                                <Button 
-                                bordered 
-                                style={styles.loginButton}
-                                onPress={this.goToRegisterHandler}>
+                                <Button
+                                    bordered
+                                    style={styles.loginButton}
+                                    onPress={this.goToRegisterHandler}>
                                     <Text>Register an Account</Text>
                                 </Button>
                             </View>

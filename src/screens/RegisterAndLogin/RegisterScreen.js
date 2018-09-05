@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Form, Item, Input, Label, Button, Text, Container } from 'native-base';
 import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, ScrollView } from 'react-native';
 
+import userPool from '../../AWS/cognito_config';
+import { CognitoUserAttribute } from 'amazon-cognito-identity-js';
 import MainTabs from '../MainTabs/MainTabs';
 
 export default class RegisterScreen extends Component {
@@ -23,7 +25,27 @@ export default class RegisterScreen extends Component {
     }
 
     registerHandler = () => {
-        MainTabs();
+        const attributeList = [];
+        attributeList.push(new CognitoUserAttribute({Name:'email', Value:this.state.email}));
+        attributeList.push(new CognitoUserAttribute({Name:'name', Value:this.state.name}));
+        attributeList.push(new CognitoUserAttribute({Name:'custom:office', Value:this.state.office}));
+        var cognitoUser;
+        //Call SignUp function
+        userPool.signUp(this.state.email, this.state.password,
+            attributeList, null, (err, result) => {
+                if (err) {
+                    console.log('Error at signup', err);
+                    return;
+                }
+                cognitoUser = result.user;
+                console.log('cognitoUser', cognitoUser)
+                this.props.navigator.resetTo({
+                    screen: "IM3514_Project.LoginScreen",
+                    title: "Login",
+                    animationType: 'fade'
+                });
+            });
+        // MainTabs();
     }
 
     render() {
