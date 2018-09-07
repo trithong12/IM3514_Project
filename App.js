@@ -2,6 +2,10 @@ import { Navigation } from 'react-native-navigation';
 
 import LoginScreen from './src/screens/RegisterAndLogin/LoginScreen';
 import RegisterScreen from './src/screens/RegisterAndLogin/RegisterScreen';
+import ConfirmationScreen from './src/screens/RegisterAndLogin/ConfirmationScreen';
+import ConfirmSuccessScreen from './src/screens/RegisterAndLogin/ConfirmSuccessScreen';
+import ForgotPasswordScreen from './src/screens/RegisterAndLogin/ForgotPasswordScreen';
+import ResetPasswordScreen from './src/screens/RegisterAndLogin/ResetPasswordScreen';
 import SideDrawer from './src/screens/SideDrawer/SideDrawer';
 import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 import RobotScreen from './src/screens/RobotScreen/RobotScreen';
@@ -19,6 +23,26 @@ Navigation.registerComponent(
 Navigation.registerComponent(
   "IM3514_Project.RegisterScreen",
   () => RegisterScreen
+);
+
+Navigation.registerComponent(
+  "IM3514_Project.ConfirmationScreen",
+  () => ConfirmationScreen
+);
+
+Navigation.registerComponent(
+  "IM3514_Project.ConfirmSuccessScreen",
+  () => ConfirmSuccessScreen
+);
+
+Navigation.registerComponent(
+  "IM3514_Project.ForgotPasswordScreen",
+  () => ForgotPasswordScreen
+);
+
+Navigation.registerComponent(
+  "IM3514_Project.ResetPasswordScreen",
+  () => ResetPasswordScreen
 );
 
 Navigation.registerComponent(

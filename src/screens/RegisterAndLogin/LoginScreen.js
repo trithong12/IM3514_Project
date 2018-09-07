@@ -13,6 +13,7 @@ export default class LoginScreen extends Component {
         this.state = {
             email: "",
             password: "",
+            user: "",
         };
     }
 
@@ -29,7 +30,6 @@ export default class LoginScreen extends Component {
             onSuccess: (result) => {
                 console.log('onSuccess', result)
                 console.log('access token + ' + result.getAccessToken().getJwtToken());
-                MainTabs();
             },
             onFailure: (err) => {
                 console.log('onFailure', err)
@@ -38,6 +38,8 @@ export default class LoginScreen extends Component {
                 console.log('mfaRequired', codeDeliveryDetails)
             }
         });
+        console.log(cognitoUser);
+        MainTabs();
     }
     goToRegisterHandler = () => {
         this.props.navigator.push({
@@ -45,6 +47,13 @@ export default class LoginScreen extends Component {
             title: "Registeration",
             animationType: 'fade'
         });
+    }
+    goToForgotPasswordHandler = () => {
+        this.props.navigator.push({
+            screen: "IM3514_Project.ForgotPasswordScreen",
+            title: "Forgot Password",
+            animationType: 'fade'
+        })
     }
 
     render() {
@@ -93,6 +102,12 @@ export default class LoginScreen extends Component {
                                     style={styles.loginButton}
                                     onPress={this.goToRegisterHandler}>
                                     <Text>Register an Account</Text>
+                                </Button>
+                                <Button
+                                    transparent
+                                    style={styles.loginButton}
+                                    onPress={this.goToForgotPasswordHandler}>
+                                    <Text>Forgot Password</Text>
                                 </Button>
                             </View>
                         </Form>
