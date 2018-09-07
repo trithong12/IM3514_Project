@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/res/values-land/values-land.xml",

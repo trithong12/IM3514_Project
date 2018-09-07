@@ -4,7 +4,7 @@ package com.im3514_project;
 
 // import com.facebook.react.ReactApplication;
 import com.amazonaws.RNAWSCognitoPackage;
-import com.airlabsinc.RNAWSCognitoPackage;
+// import com.airlabsinc.RNAWSCognitoPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 // import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -26,8 +26,7 @@ import java.util.List;
 //     protected List<ReactPackage> getPackages() {
 //       return Arrays.<ReactPackage>asList(
 //           new MainReactPackage(),
-            new RNAWSCognitoPackage(),
-            new RNAWSCognitoPackage(),
+            
 //             new VectorIconsPackage()
 //       );
 //     }
@@ -65,7 +64,8 @@ import com.reactnativenavigation.NavigationApplication;
          // No need to add RnnPackage and MainReactPackage
          return Arrays.<ReactPackage>asList(
              // eg. new VectorIconsPackage()
-             new VectorIconsPackage()
+             new VectorIconsPackage(),
+             new RNAWSCognitoPackage()
          );
      }
 

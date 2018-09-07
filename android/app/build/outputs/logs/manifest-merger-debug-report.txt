@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from [:react-native-vector-icons] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-20:12
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:2:1-15:12
+ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:amazon-cognito-identity-js] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/amazon-cognito-identity-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-20:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/7227777b1e37f4143fd16b936b09d165/AndroidManifest.xml:2:1-15:12
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:2:1-14:12
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/23d9d1a1d6462b5eaf991b7f780886fb/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:17:1-31:12
@@ -31,39 +32,39 @@ MERGED from [com.android.support:support-media-compat:25.3.1] /Users/tonychen/.g
 MERGED from [com.android.support:support-core-utils:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/eb36c328fd93589b6ea179f15f19cc1f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bc7678bbfe67e365d344f4738983ff3/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:17:1-31:12
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
 	package
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:2:5-33
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:2:5-33
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:11:5-78
+ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/7227777b1e37f4143fd16b936b09d165/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/7227777b1e37f4143fd16b936b09d165/AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:5:22-75
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:5:22-75
 application
-ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:7:5-24:19
-MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
-MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:13:5-20
+ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/7227777b1e37f4143fd16b936b09d165/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/7227777b1e37f4143fd16b936b09d165/AndroidManifest.xml:13:5-20
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:12:5-20
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:12:5-20
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/23d9d1a1d6462b5eaf991b7f780886fb/AndroidManifest.xml:11:5-20
@@ -97,53 +98,55 @@ MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle
 MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:9:7-39
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:9:7-39
 	android:icon
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:10:7-41
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:10:7-41
 	android:allowBackup
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:11:7-34
 	android:theme
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:12:7-38
 	android:name
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:8:7-38
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:8:7-38
 activity#com.im3514_project.MainActivity
-ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:13:7-22:18
+ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:13:7-22:18
 	android:label
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:15:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:17:9-51
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:17:9-51
 	android:configChanges
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:16:9-79
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:16:9-79
 	android:name
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:14:9-37
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:14:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:18:9-21:25
+ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:18:9-21:25
 action#android.intent.action.MAIN
-ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:19:13-65
+ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:19:13-65
 	android:name
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:19:21-62
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:19:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:20:13-73
+ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:20:13-73
 	android:name
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:20:23-70
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:20:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:23:7-84
-MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
-MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
+ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:23:7-84
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
 	android:exported
-		ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-37
+		ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:23:17-81
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:23:17-81
 uses-sdk
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-vector-icons] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/00da730bf2b828a69b3bc246881bdd63/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+MERGED from [:amazon-cognito-identity-js] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/amazon-cognito-identity-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:amazon-cognito-identity-js] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/amazon-cognito-identity-js/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/7227777b1e37f4143fd16b936b09d165/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/7227777b1e37f4143fd16b936b09d165/AndroidManifest.xml:7:5-9:41
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:8:5-10:41
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/8e69ccf8cda6b8c1bdd3b18cb55a1b58/AndroidManifest.xml:8:5-10:41
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/23d9d1a1d6462b5eaf991b7f780886fb/AndroidManifest.xml:7:5-9:41
@@ -190,24 +193,24 @@ MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle
 MERGED from [com.android.support:support-core-ui:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/3bc7678bbfe67e365d344f4738983ff3/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/ef9f32107d172ea72bf1779d95bd7044/AndroidManifest.xml:21:5-23:58
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml
 activity#com.reactnativenavigation.controllers.NavigationActivity
-ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-14:86
+ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-14:86
 	android:configChanges
-		ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-83
+		ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-83
 	android:name
-		ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-84
+		ADDED from [:react-native-navigation] /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-84
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/AndroidManifest.xml:25:5-27:34
@@ -237,8 +240,8 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/tonychen/.gradle/
 	android:name
 		ADDED from [com.android.support:design:25.3.1] /Users/tonychen/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/0e7b27df42babdf950b56178210119c4/AndroidManifest.xml:26:9-47
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
