@@ -1,4 +1,4 @@
-#Fri Aug 24 19:22:03 CST 2018
-base.0=/Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Fri Sep 07 21:50:45 CST 2018
+base.0=/Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

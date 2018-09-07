@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tonychen/Projects/Graduation Topic/Local_Repo_1/IM3514_Project/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km-rKH/values-km-rKH.xml",
+            "outputFile": "/Users/tonychen/Projects/Graduation Topic/Local_Repo_6/IM3514_Project/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km-rKH/values-km-rKH.xml",
             "map": [
                 {
                     "source": "/Users/tonychen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/79a35c54a92340cd01096ecc37b0343a/res/values-km-rKH/values-km-rKH.xml",
