@@ -11,7 +11,7 @@ export default class ChangeEmailScreen extends Component {
                     <Item>
                         <Label>Your current Email:</Label>
                         <Input
-                            value={"trithong12@gmail.com"}
+                            value={this.props.email}
                             editable={false}
                         />
                     </Item>

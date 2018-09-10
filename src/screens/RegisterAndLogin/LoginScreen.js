@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Navigation } from 'react-native-navigation';
 import { Form, Item, Input, Label, Button, Text } from 'native-base';
 import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard } from 'react-native';
 
@@ -7,7 +6,10 @@ import { AuthenticationDetails, CognitoUser } from 'amazon-cognito-identity-js';
 import userPool from '../../AWS/cognito_config';
 import MainTabs from '../MainTabs/MainTabs';
 
-export default class LoginScreen extends Component {
+import { connect } from 'react-redux';
+import { setCognitoUser } from '../../store/actions/authActions';
+
+class LoginScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -28,18 +30,29 @@ export default class LoginScreen extends Component {
         });
         cognitoUser.authenticateUser(authenticationDetails, {
             onSuccess: (result) => {
-                console.log('onSuccess', result)
+                console.log('onSuccess', typeof(result), result);
                 console.log('access token + ' + result.getAccessToken().getJwtToken());
+                console.log("CognitoUser1: ", typeof(cognitoUser), cognitoUser);
+                this.props.setCognitoUser(cognitoUser);
+                cognitoUser.setDeviceStatusRemembered({
+                    onSuccess: function (result) {
+                        console.log('call result: ' + result);
+                    },
+                    onFailure: function(err) {
+                        alert(err);
+                    }
+                });
+                MainTabs();
             },
             onFailure: (err) => {
-                console.log('onFailure', err)
+                console.log('onFailure', err);
+                alert(err);
             },
             mfaRequired: (codeDeliveryDetails) => {
-                console.log('mfaRequired', codeDeliveryDetails)
+                console.log('mfaRequired', codeDeliveryDetails),
+                alert(codeDeliveryDetails);
             }
         });
-        console.log(cognitoUser);
-        MainTabs();
     }
     goToRegisterHandler = () => {
         this.props.navigator.push({
@@ -139,3 +152,12 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     }
 });
+
+const mapStateToProps = state => {
+    return {
+        cognitoUser: state.cognitoUser
+    }
+}
+
+export default connect(null, {setCognitoUser})(LoginScreen);
+// export default LoginScreen;

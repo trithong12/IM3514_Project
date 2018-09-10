@@ -1,10 +1,37 @@
 import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Text, Left, Right, Icon, Button } from 'native-base';
 import { TouchableOpacity, StyleSheet } from 'react-native';
-export default class ProfileScreen extends Component {
+import { connect } from 'react-redux';
+class ProfileScreen extends Component {
   constructor(props) {
     super(props);
-    this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent)
+    this.state = {
+      email: "",
+      name: "",
+      office: ""
+    }
+    this.loadData();
+    
+    this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+  }
+
+  loadData = () => {
+    const cognitoUser = this.props.cognitoUser;
+    const outerThis = this;
+    cognitoUser.getUserAttributes(function (err, result) {
+      if (err) {
+        alert(err);
+        return;
+      }
+      for (i = 0; i < result.length; i++) {
+        console.log('attribute [' + i + '] ' + result[i].getName() + ' has value ' + result[i].getValue());
+      }
+      outerThis.setState({
+        email: result[4].getValue(),
+        name: result[2].getValue(),
+        office: result[3].getValue()
+      });
+    });  
   }
 
   onNavigatorEvent = event => {
@@ -18,19 +45,28 @@ export default class ProfileScreen extends Component {
   changeEmailHandler = () => {
     this.props.navigator.push({
       screen: "IM3514_Project.ChangeEmailScreen",
-      title: "Change Email"
+      title: "Change Email",
+      passProps: {
+        email: this.state.email
+      }
     });
   }
   changeNameHandler = () => {
     this.props.navigator.push({
       screen: "IM3514_Project.ChangeNameScreen",
-      title: "Change Name"
+      title: "Change Name",
+      passProps: {
+        name: this.state.name
+      }
     });
   }
   changeOfficeHandler = () => {
     this.props.navigator.push({
       screen: "IM3514_Project.ChangeOfficeScreen",
-      title: "Change Office"
+      title: "Change Office",
+      passProps: {
+        office: this.state.office
+      }
     });
   }
   changePasswordHandler = () => {
@@ -48,7 +84,7 @@ export default class ProfileScreen extends Component {
             <ListItem>
               <Left>
                 <Text>Email: </Text>
-                <Text>trithong12@gmail.com</Text>
+                <Text>{this.state.email}</Text>
               </Left>
               <TouchableOpacity onPress={this.changeEmailHandler}>
                 <Right style={styles.rightStyle}>
@@ -60,7 +96,7 @@ export default class ProfileScreen extends Component {
             <ListItem>
               <Left>
                 <Text>Name: </Text>
-                <Text>Tran Tri Thong</Text>
+                <Text>{this.state.name}</Text>
               </Left>
               <TouchableOpacity onPress={this.changeNameHandler}>
                 <Right style={styles.rightStyle}>
@@ -72,7 +108,7 @@ export default class ProfileScreen extends Component {
             <ListItem>
               <Left>
                 <Text>Office: </Text>
-                <Text>SL245</Text>
+                <Text>SL{this.state.office}</Text>
               </Left>
               <TouchableOpacity onPress={this.changeOfficeHandler}>
                 <Right style={styles.rightStyle}>
@@ -110,3 +146,11 @@ const styles = StyleSheet.create({
     marginTop: 10
   }
 });
+
+const mapStateToProps = state => {
+  return {
+    cognitoUser: state.auth.cognitoUser
+  }
+}
+
+export default connect(mapStateToProps)(ProfileScreen);

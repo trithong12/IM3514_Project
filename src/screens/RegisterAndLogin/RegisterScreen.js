@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Item, Input, Label, Button, Text, Container } from 'native-base';
 import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, ScrollView } from 'react-native';
-import { Navigation } from 'react-native-navigation';
 
 import userPool from '../../AWS/cognito_config';
 import { CognitoUserAttribute } from 'amazon-cognito-identity-js';

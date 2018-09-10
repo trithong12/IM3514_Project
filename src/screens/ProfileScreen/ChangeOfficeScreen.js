@@ -11,7 +11,7 @@ export default class ChangeOfficeScreen extends Component {
                     <Item>
                         <Label>Your current Office:</Label>
                         <Input
-                            value={"SL245"}
+                            value={"SL"+this.props.office}
                             editable={false}
                         />
                     </Item>
