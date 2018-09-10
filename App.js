@@ -1,4 +1,5 @@
 import { Navigation } from 'react-native-navigation';
+import { Provider } from 'react-redux';
 
 import LoginScreen from './src/screens/RegisterAndLogin/LoginScreen';
 import RegisterScreen from './src/screens/RegisterAndLogin/RegisterScreen';
@@ -15,9 +16,15 @@ import ChangeNameScreen from './src/screens/ProfileScreen/ChangeNameScreen';
 import ChangeOfficeScreen from './src/screens/ProfileScreen/ChangeOfficeScreen';
 import ChangePasswordScreen from './src/screens/ProfileScreen/ChangePasswordScreen';
 
+import configureStore from './src/store/configureStore';
+
+const store = configureStore();
+
 Navigation.registerComponent(
   "IM3514_Project.LoginScreen",
-  () => LoginScreen
+  () => LoginScreen,
+  store,
+  Provider
 );
 
 Navigation.registerComponent(
@@ -47,7 +54,9 @@ Navigation.registerComponent(
 
 Navigation.registerComponent(
   "IM3514_Project.SideDrawer",
-  () => SideDrawer
+  () => SideDrawer,
+  store,
+  Provider
 );
 
 
@@ -64,7 +73,9 @@ Navigation.registerComponent(
 
 Navigation.registerComponent(
   "IM3514_Project.ProfileScreen",
-  () => ProfileScreen
+  () => ProfileScreen,
+  store,
+  Provider
 );
 Navigation.registerComponent(
   "IM3514_Project.ChangeEmailScreen",
@@ -84,7 +95,7 @@ Navigation.registerComponent(
 );
 
 
-Navigation.startSingleScreenApp({
+export default () => Navigation.startSingleScreenApp({
   screen: {
     screen: "IM3514_Project.LoginScreen",
     title: "Login"

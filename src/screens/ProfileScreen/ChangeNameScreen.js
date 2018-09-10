@@ -11,7 +11,7 @@ export default class ChangeNameScreen extends Component {
                     <Item>
                         <Label>Your current Name:</Label>
                         <Input
-                            value={"Tran Tri Thong"}
+                            value={this.props.name}
                             editable={false}
                         />
                     </Item>
