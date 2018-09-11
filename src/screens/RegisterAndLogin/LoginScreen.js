@@ -19,6 +19,10 @@ class LoginScreen extends Component {
         };
     }
 
+    componentWillUnmount() {
+
+    }
+    
     loginHandler = () => {
         const authenticationDetails = new AuthenticationDetails({
             Username: this.state.email,
@@ -34,14 +38,14 @@ class LoginScreen extends Component {
                 console.log('access token + ' + result.getAccessToken().getJwtToken());
                 console.log("CognitoUser1: ", typeof(cognitoUser), cognitoUser);
                 this.props.setCognitoUser(cognitoUser);
-                cognitoUser.setDeviceStatusRemembered({
-                    onSuccess: function (result) {
-                        console.log('call result: ' + result);
-                    },
-                    onFailure: function(err) {
-                        alert(err);
-                    }
-                });
+                // cognitoUser.setDeviceStatusRemembered({
+                //     onSuccess: function (result) {
+                //         console.log('call result: ' + result);
+                //     },
+                //     onFailure: function(err) {
+                //         alert(err);
+                //     }
+                // });
                 MainTabs();
             },
             onFailure: (err) => {
@@ -57,14 +61,14 @@ class LoginScreen extends Component {
     goToRegisterHandler = () => {
         this.props.navigator.push({
             screen: "IM3514_Project.RegisterScreen",
-            title: "Registeration",
+            title: "註冊帳號",
             animationType: 'fade'
         });
     }
     goToForgotPasswordHandler = () => {
         this.props.navigator.push({
             screen: "IM3514_Project.ForgotPasswordScreen",
-            title: "Forgot Password",
+            title: "忘記密碼",
             animationType: 'fade'
         })
     }
@@ -75,10 +79,10 @@ class LoginScreen extends Component {
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={{ flex: 1 }}>
                     <KeyboardAvoidingView style={styles.container} behavior="padding">
-                        <Text style={{ fontSize: 22, fontFamily: "Arial" }}>Please login!</Text>
+                        <Text style={{ fontSize: 22, fontFamily: "Arial" }}>請登入！</Text>
                         <Form style={styles.form}>
                             <Item floatingLabel>
-                                <Label>Email</Label>
+                                <Label>帳號(電子信箱)</Label>
                                 <Input
                                     keyboardType="email-address"
                                     autoCapitalize="none"
@@ -90,7 +94,7 @@ class LoginScreen extends Component {
                                 />
                             </Item>
                             <Item floatingLabel last>
-                                <Label>Password</Label>
+                                <Label>密碼</Label>
                                 <Input
                                     secureTextEntry
                                     autoCapitalize="none"
@@ -108,19 +112,19 @@ class LoginScreen extends Component {
                                     style={styles.loginButton}
                                     onPress={this.loginHandler}
                                 >
-                                    <Text>Login</Text>
+                                    <Text>登入</Text>
                                 </Button>
                                 <Button
                                     bordered
                                     style={styles.loginButton}
                                     onPress={this.goToRegisterHandler}>
-                                    <Text>Register an Account</Text>
+                                    <Text>註冊帳號</Text>
                                 </Button>
                                 <Button
                                     transparent
                                     style={styles.loginButton}
                                     onPress={this.goToForgotPasswordHandler}>
-                                    <Text>Forgot Password</Text>
+                                    <Text>忘記密碼</Text>
                                 </Button>
                             </View>
                         </Form>

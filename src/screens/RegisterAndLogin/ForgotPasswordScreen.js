@@ -54,7 +54,7 @@ export default class LoginScreen extends Component {
                     <KeyboardAvoidingView style={styles.container} behavior="padding">
                         <Form style={styles.form}>
                             <Item floatingLabel>
-                                <Label>Email</Label>
+                                <Label>電子信箱</Label>
                                 <Input
                                     keyboardType="email-address"
                                     autoCapitalize="none"
@@ -69,7 +69,7 @@ export default class LoginScreen extends Component {
                                     danger
                                     style={styles.loginButton}
                                     onPress={this.forgotPasswordHandler}>
-                                    <Text>Next</Text>
+                                    <Text>下一步</Text>
                                 </Button>
                             </View>
                         </Form>

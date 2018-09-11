@@ -9,19 +9,19 @@ export default class ChangeNameScreen extends Component {
             <Container style={styles.container}>
                 <Form style={styles.inputContainer}>
                     <Item>
-                        <Label>Your current Name:</Label>
+                        <Label>您目前姓名：</Label>
                         <Input
                             value={this.props.name}
                             editable={false}
                         />
                     </Item>
                     <Item>
-                        <Label>New Name:</Label>
+                        <Label>請輸入新姓名：</Label>
                         <Input />
                     </Item>
                 </Form>
                 <Button transparent style={styles.buttonStyle}>
-                    <Text>Submit</Text>
+                    <Text>確認</Text>
                 </Button>
             </Container>
         );

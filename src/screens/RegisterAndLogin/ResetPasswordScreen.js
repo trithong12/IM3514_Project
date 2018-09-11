@@ -25,11 +25,11 @@ export default class LoginScreen extends Component {
                 console.log('Password confirmed!');
                 outerThis.props.navigator.resetTo({
                     screen: 'IM3514_Project.ConfirmSuccessScreen', // unique ID registered with Navigation.registerScreen
-                    title: "Password Reset!", // navigation bar title of the pushed screen (optional)
+                    title: "密碼已重設", // navigation bar title of the pushed screen (optional)
                     animated: true,
                     animationType: 'fade',
                     passProps: {
-                        message: "Your password has been reset!"
+                        message: "您的密碼已重新設定！"
                     }
                 });
             },
@@ -48,7 +48,7 @@ export default class LoginScreen extends Component {
                     <KeyboardAvoidingView style={styles.container} behavior="padding">
                         <Form style={styles.form}>
                             <Item floatingLabel>
-                                <Label>Enter Verification Code</Label>
+                                <Label>請輸入驗證碼</Label>
                                 <Input
                                     keyboardType="number-pad"
                                     autoCapitalize="none"
@@ -60,7 +60,7 @@ export default class LoginScreen extends Component {
                                 />
                             </Item>
                             <Item floatingLabel last>
-                                <Label>Enter New Password</Label>
+                                <Label>請輸入新密碼</Label>
                                 <Input
                                     secureTextEntry
                                     autoCapitalize="none"
@@ -73,7 +73,7 @@ export default class LoginScreen extends Component {
                                 />
                             </Item>
                             <Item floatingLabel>
-                                <Label>Confirm New Password</Label>
+                                <Label>確認新密碼</Label>
                                 <Input
                                     secureTextEntry
                                     autoCapitalize="none"
@@ -89,7 +89,7 @@ export default class LoginScreen extends Component {
                                     transparent danger
                                     style={styles.loginButton}
                                     onPress={this.resetPasswordHandler}>
-                                    <Text>Reset Password</Text>
+                                    <Text>重設密碼</Text>
                                 </Button>
                             </View>
                         </Form>

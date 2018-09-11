@@ -1,23 +1,37 @@
 import React, { Component } from 'react';
-import { Container, Content, List, ListItem, Text, Left, Right, Icon, Button } from 'native-base';
+import { Container, Content, List, ListItem, Card, CardItem, Text, Left, Right, Icon, Button, Thumbnail } from 'native-base';
 import { TouchableOpacity, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
+import s3_bucket from '../../AWS/s3_config';
+
 class ProfileScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      avatar: "../../img/Blank_avatar.jpeg",
       email: "",
       name: "",
       office: ""
     }
     this.loadData();
-    
+
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
   }
 
+  componentWillUnmount() {
+
+  }
+
   loadData = () => {
-    const cognitoUser = this.props.cognitoUser;
     const outerThis = this;
+    var urlParams = { Key: 'avatar/Blank_avatar.jpeg' };
+    s3_bucket.getSignedUrl('getObject', urlParams, function (err, url) {
+      console.log('the url of the image is', url);
+      outerThis.setState({
+        avatar: url
+      });
+    });
+    const cognitoUser = this.props.cognitoUser;
     cognitoUser.getUserAttributes(function (err, result) {
       if (err) {
         alert(err);
@@ -31,7 +45,7 @@ class ProfileScreen extends Component {
         name: result[2].getValue(),
         office: result[3].getValue()
       });
-    });  
+    });
   }
 
   onNavigatorEvent = event => {
@@ -45,7 +59,7 @@ class ProfileScreen extends Component {
   changeEmailHandler = () => {
     this.props.navigator.push({
       screen: "IM3514_Project.ChangeEmailScreen",
-      title: "Change Email",
+      title: "變更信箱",
       passProps: {
         email: this.state.email
       }
@@ -54,7 +68,7 @@ class ProfileScreen extends Component {
   changeNameHandler = () => {
     this.props.navigator.push({
       screen: "IM3514_Project.ChangeNameScreen",
-      title: "Change Name",
+      title: "變更名稱",
       passProps: {
         name: this.state.name
       }
@@ -63,7 +77,7 @@ class ProfileScreen extends Component {
   changeOfficeHandler = () => {
     this.props.navigator.push({
       screen: "IM3514_Project.ChangeOfficeScreen",
-      title: "Change Office",
+      title: "變更辦公室",
       passProps: {
         office: this.state.office
       }
@@ -72,47 +86,66 @@ class ProfileScreen extends Component {
   changePasswordHandler = () => {
     this.props.navigator.push({
       screen: "IM3514_Project.ChangePasswordScreen",
-      title: "Change Password"
+      title: "變更密碼"
+    });
+  }
+
+  goToAvailableListHandler = () => {
+    this.props.navigator.push({
+      screen: "IM3514_Project.AvailableListScreen",
+      title: "可收件時間"
     });
   }
 
   render() {
+    const uri = this.state.avatar;
     return (
       <Container>
         <Content>
           <List>
+            <ListItem style={styles.thumbnailContainer}>
+              <Thumbnail large source={{ uri: uri }} />
+            </ListItem>
             <ListItem>
               <Left>
-                <Text>Email: </Text>
-                <Text>{this.state.email}</Text>
+                <Text>電子信箱：{this.state.email}</Text>
               </Left>
               <TouchableOpacity onPress={this.changeEmailHandler}>
                 <Right style={styles.rightStyle}>
-                  <Text style={styles.changeText}>Change </Text>
+                  <Text style={styles.changeText}>變更 </Text>
                   <Icon name="arrow-forward" />
                 </Right>
               </TouchableOpacity>
             </ListItem>
             <ListItem>
               <Left>
-                <Text>Name: </Text>
-                <Text>{this.state.name}</Text>
+                <Text>姓名：{this.state.name}</Text>
               </Left>
               <TouchableOpacity onPress={this.changeNameHandler}>
                 <Right style={styles.rightStyle}>
-                  <Text style={styles.changeText}>Change </Text>
+                  <Text style={styles.changeText}>變更 </Text>
                   <Icon name="arrow-forward" />
                 </Right>
               </TouchableOpacity>
             </ListItem>
             <ListItem>
               <Left>
-                <Text>Office: </Text>
-                <Text>SL{this.state.office}</Text>
+                <Text>辦公室：SL{this.state.office}</Text>
               </Left>
               <TouchableOpacity onPress={this.changeOfficeHandler}>
                 <Right style={styles.rightStyle}>
-                  <Text style={styles.changeText}>Change </Text>
+                  <Text style={styles.changeText}>變更 </Text>
+                  <Icon name="arrow-forward" />
+                </Right>
+              </TouchableOpacity>
+            </ListItem>
+            <ListItem>
+              <Left>
+                <Text>可收件時間</Text>
+              </Left>
+              <TouchableOpacity onPress={this.goToAvailableListHandler}>
+                <Right style={styles.rightStyle}>
+                  <Text style={styles.changeText}>檢視 </Text>
                   <Icon name="arrow-forward" />
                 </Right>
               </TouchableOpacity>
@@ -123,7 +156,7 @@ class ProfileScreen extends Component {
               style={styles.buttonStyle}
               onPress={this.changePasswordHandler}
             >
-              <Text>Change Password</Text>
+              <Text>變更密碼</Text>
             </Button>
           </List>
         </Content>
@@ -133,6 +166,9 @@ class ProfileScreen extends Component {
 }
 
 const styles = StyleSheet.create({
+  thumbnailContainer: {
+    alignSelf: 'center'
+  },
   rightStyle: {
     flexDirection: 'row',
     alignItems: 'center',
