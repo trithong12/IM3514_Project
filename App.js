@@ -15,8 +15,10 @@ import ChangeEmailScreen from './src/screens/ProfileScreen/ChangeEmailScreen';
 import ChangeNameScreen from './src/screens/ProfileScreen/ChangeNameScreen';
 import ChangeOfficeScreen from './src/screens/ProfileScreen/ChangeOfficeScreen';
 import ChangePasswordScreen from './src/screens/ProfileScreen/ChangePasswordScreen';
+import AvailableListScreen from './src/screens/ProfileScreen/AvailableListScreen';
 
 import configureStore from './src/store/configureStore';
+import AddAvailableTimeScreen from './src/screens/ProfileScreen/AddAvailableTimeScreen';
 
 const store = configureStore();
 
@@ -93,11 +95,19 @@ Navigation.registerComponent(
   "IM3514_Project.ChangePasswordScreen",
   () => ChangePasswordScreen
 );
+Navigation.registerComponent(
+  "IM3514_Project.AvailableListScreen",
+  () => AvailableListScreen
+);
+Navigation.registerComponent(
+  "IM3514_Project.AddAvailableTimeScreen",
+  () => AddAvailableTimeScreen
+);
 
 
 export default () => Navigation.startSingleScreenApp({
   screen: {
     screen: "IM3514_Project.LoginScreen",
-    title: "Login"
+    title: "登入"
   }
 });

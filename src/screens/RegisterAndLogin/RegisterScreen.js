@@ -41,7 +41,7 @@ export default class RegisterScreen extends Component {
                 console.log('cognitoUser', cognitoUser)
                 this.props.navigator.resetTo({
                     screen: 'IM3514_Project.ConfirmationScreen', // unique ID registered with Navigation.registerScreen
-                    title: 'Confirm Email', // title of the screen as appears in the nav bar (optional)
+                    title: '驗證信箱', // title of the screen as appears in the nav bar (optional)
                     passProps: {
                         email: this.state.email
                     },
@@ -61,7 +61,7 @@ export default class RegisterScreen extends Component {
                         <KeyboardAvoidingView behavior="padding">
                             <Form style={styles.form}>
                                 <Item floatingLabel>
-                                    <Label>Email</Label>
+                                    <Label>電子信箱</Label>
                                     <Input
                                         keyboardType="email-address"
                                         autoCapitalize="none"
@@ -73,7 +73,7 @@ export default class RegisterScreen extends Component {
                                     />
                                 </Item>
                                 <Item floatingLabel>
-                                    <Label>Password</Label>
+                                    <Label>密碼</Label>
                                     <Input
                                         secureTextEntry
                                         autoCapitalize="none"
@@ -86,7 +86,7 @@ export default class RegisterScreen extends Component {
                                     />
                                 </Item>
                                 <Item floatingLabel>
-                                    <Label>Confirm Password</Label>
+                                    <Label>確認密碼</Label>
                                     <Input
                                         secureTextEntry
                                         autoCapitalize="none"
@@ -99,7 +99,7 @@ export default class RegisterScreen extends Component {
                                     />
                                 </Item>
                                 <Item floatingLabel>
-                                    <Label>Name</Label>
+                                    <Label>姓名</Label>
                                     <Input
                                         autoCorrect={false}
                                         getRef={(input) => this.nameInput = input}
@@ -110,7 +110,7 @@ export default class RegisterScreen extends Component {
                                     />
                                 </Item>
                                 <Item floatingLabel last>
-                                    <Label>Office (SL)</Label>
+                                    <Label>辦公室(SL)</Label>
                                     <Input
                                         autoCorrect={false}
                                         getRef={(input) => this.officeInput = input}
@@ -128,7 +128,7 @@ export default class RegisterScreen extends Component {
                                         style={styles.registerButton}
                                         onPress={this.registerHandler}
                                     >
-                                        <Text>Confirm to register</Text>
+                                        <Text>確認註冊</Text>
                                     </Button>
                                 </View>
                             </Form>

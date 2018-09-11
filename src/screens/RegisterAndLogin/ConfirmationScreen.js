@@ -28,11 +28,11 @@ export default class LoginScreen extends Component {
             console.log("Success m: ", result);
             this.props.navigator.resetTo({
                 screen: 'IM3514_Project.ConfirmSuccessScreen', // unique ID registered with Navigation.registerScreen
-                title: "Confirmation completed!", // navigation bar title of the pushed screen (optional)
+                title: "完成驗證信箱", // navigation bar title of the pushed screen (optional)
                 animated: true,
                 animationType: 'fade',
                 passProps: {
-                    message: "Your account has been verified!"
+                    message: "您的帳號已成功通過驗證！"
                 }
             });
         });
@@ -46,7 +46,7 @@ export default class LoginScreen extends Component {
                     <KeyboardAvoidingView style={styles.container} behavior="padding">
                         <Form style={styles.form}>
                             <Item floatingLabel>
-                                <Label>Enter Verification Code</Label>
+                                <Label>請輸入驗證碼</Label>
                                 <Input
                                     keyboardType="number-pad"
                                     autoCapitalize="none"
@@ -61,7 +61,7 @@ export default class LoginScreen extends Component {
                                     transparent danger
                                     style={styles.loginButton}
                                     onPress={this.confirmHandler}>
-                                    <Text>Confirm</Text>
+                                    <Text>確認</Text>
                                 </Button>
                             </View>
                         </Form>

@@ -9,20 +9,20 @@ export default class ChangeEmailScreen extends Component {
             <Container style={styles.container}>
                 <Form style={styles.inputContainer}>
                     <Item>
-                        <Label>Your current Password:</Label>
+                        <Label>請輸入目前密碼：</Label>
                         <Input secureTextEntry autoCorrect={false} autoCapitalize="none" />
                     </Item>
                     <Item>
-                        <Label>Your new Password:</Label>
+                        <Label>請輸入新密碼：</Label>
                         <Input secureTextEntry autoCorrect={false} autoCapitalize="none" />
                     </Item>
                     <Item>
-                        <Label>Confirm new Password:</Label>
+                        <Label>確認新密碼：</Label>
                         <Input secureTextEntry autoCorrect={false} autoCapitalize="none" />
                     </Item>
                 </Form>
                 <Button transparent style={styles.buttonStyle}>
-                    <Text>Submit</Text>
+                    <Text>確認</Text>
                 </Button>
             </Container>
         );

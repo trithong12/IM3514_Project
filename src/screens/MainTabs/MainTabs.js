@@ -12,10 +12,10 @@ const startTabs = () => {
         Navigation.startTabBasedApp({
             tabs: [
                 {
-                    label: 'Home', // tab label as appears under the icon in iOS (optional)
+                    label: '首頁', // tab label as appears under the icon in iOS (optional)
                     screen: 'IM3514_Project.HomeScreen', // unique ID registered with Navigation.registerScreen
                     icon: result[0], // local image asset for the tab icon unselected state (optional on iOS)
-                    title: 'Home', // title of the screen as appears in the nav bar (optional)
+                    title: '首頁', // title of the screen as appears in the nav bar (optional)
                     titleImage: result[0], // iOS only. navigation bar title image instead of the title text of the pushed screen (optional)
                     navigatorButtons: { // Menu button to open the SideDrawer
                         leftButtons: [
@@ -28,10 +28,10 @@ const startTabs = () => {
                     },
                 },
                 {
-                    label: 'Robot',
+                    label: '機器人',
                     screen: 'IM3514_Project.RobotScreen',
                     icon: result[1],
-                    title: 'Robot',
+                    title: '機器人',
                     titleImage: result[1],
                     navigatorButtons: { // Menu button to open the SideDrawer
                         leftButtons: [
@@ -44,10 +44,10 @@ const startTabs = () => {
                     },
                 },
                 {
-                    label: 'Profile',
+                    label: '個人資料',
                     screen: 'IM3514_Project.ProfileScreen',
                     icon: result[2],
-                    title: 'Profile',
+                    title: '個人資料',
                     titleImage: result[2],
                     navigatorButtons: { // Menu button to open the SideDrawer
                         leftButtons: [

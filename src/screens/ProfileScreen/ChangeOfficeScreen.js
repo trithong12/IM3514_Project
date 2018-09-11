@@ -9,19 +9,19 @@ export default class ChangeOfficeScreen extends Component {
             <Container style={styles.container}>
                 <Form style={styles.inputContainer}>
                     <Item>
-                        <Label>Your current Office:</Label>
+                        <Label>您目前辦公室：</Label>
                         <Input
                             value={"SL"+this.props.office}
                             editable={false}
                         />
                     </Item>
                     <Item>
-                        <Label>New Office:</Label>
+                        <Label>請輸入新辦公室：</Label>
                         <Input />
                     </Item>
                 </Form>
                 <Button transparent style={styles.buttonStyle}>
-                    <Text>Submit</Text>
+                    <Text>確認</Text>
                 </Button>
             </Container>
         );

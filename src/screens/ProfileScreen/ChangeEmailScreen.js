@@ -9,19 +9,19 @@ export default class ChangeEmailScreen extends Component {
             <Container style={styles.container}>
                 <Form style={styles.inputContainer}>
                     <Item>
-                        <Label>Your current Email:</Label>
+                        <Label>您目前電子信箱：</Label>
                         <Input
                             value={this.props.email}
                             editable={false}
                         />
                     </Item>
                     <Item>
-                        <Label>New Email:</Label>
+                        <Label>請輸入新電子信箱：</Label>
                         <Input />
                     </Item>
                 </Form>
                 <Button transparent style={styles.buttonStyle}>
-                    <Text>Submit</Text>
+                    <Text>確認</Text>
                 </Button>
             </Container>
         );

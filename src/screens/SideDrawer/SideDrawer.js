@@ -22,7 +22,7 @@ class SideDrawer extends Component {
             <View style={[styles.container, { width: Dimensions.get("window").width * 0.75 }]}>
                 <ListItem style={styles.drawerItem} onPress={this.logOutHandler}>
                     <Icon ios="ios-log-out" android="md-log-out" style={styles.drawerIcon} />
-                    <Text>Sign out</Text>
+                    <Text>登出</Text>
                 </ListItem>
             </View >
         );
