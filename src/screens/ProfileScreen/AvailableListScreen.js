@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
+import { Container, List, ListItem, Left, Right, Text } from 'native-base';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 class AvailableListScreen extends Component {
     constructor(props) {
         super(props);
         Promise.all([
-            Icon.getImageSource("ios-add", 30), // result 0
+            Icon.getImageSource("ios-add", 30, color="blue"), // result 0
         ]).then(result => {
             this.props.navigator.setButtons({
                 rightButtons: [
@@ -18,7 +19,6 @@ class AvailableListScreen extends Component {
                         // testID: 'e2e_is_awesome',
                         // disabled: true,
                         // disableIconTint: true,
-                        buttonColor: 'blue',
                         // buttonFontSize: 14,
                         // buttonFontWeight: '600'
                     }
@@ -42,9 +42,44 @@ class AvailableListScreen extends Component {
 
     }
 
+    goToEditScreenHandler = () => {
+        this.props.navigator.push({
+            screen: "IM3514_Project.EditAvailableTimeScreen",
+            title: "編輯可收件時間",
+            passProps: {}
+        })
+    }
+
     render() {
         return (
-            <View></View>
+            <Container>
+                <List style={{paddingTop:15}}>
+                    <ListItem onPress={this.goToEditScreenHandler}>
+                        <Left>
+                            <Text>08:00 - 16:00</Text>
+                        </Left>
+                        <Right>
+                            <Text>一、五</Text>
+                        </Right>
+                    </ListItem>
+                    <ListItem>
+                        <Left>
+                            <Text>13:30 - 16:00</Text>
+                        </Left>
+                        <Right>
+                            <Text>二、三</Text>
+                        </Right>
+                    </ListItem>
+                    <ListItem>
+                        <Left>
+                            <Text>17:00 - 20:00</Text>
+                        </Left>
+                        <Right>
+                            <Text>四</Text>
+                        </Right>
+                    </ListItem>
+                </List>
+            </Container>
         );
     }
 }
