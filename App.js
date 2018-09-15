@@ -19,6 +19,10 @@ import AvailableListScreen from './src/screens/ProfileScreen/AvailableListScreen
 
 import configureStore from './src/store/configureStore';
 import AddAvailableTimeScreen from './src/screens/ProfileScreen/AddAvailableTimeScreen';
+import EditAvailableTimeScreen from './src/screens/ProfileScreen/EditAvailableTimeScreen';
+import ChooseTargetScreen from './src/screens/HomeScreen/ChooseTargetScreen';
+import EnterDocumentScreen from './src/screens/HomeScreen/EnterDocumentScreen';
+import ReviewSendingStateScreen from './src/screens/HomeScreen/ReviewSendingStateScreen';
 
 const store = configureStore();
 
@@ -102,6 +106,23 @@ Navigation.registerComponent(
 Navigation.registerComponent(
   "IM3514_Project.AddAvailableTimeScreen",
   () => AddAvailableTimeScreen
+);
+Navigation.registerComponent(
+  "IM3514_Project.EditAvailableTimeScreen",
+  () => EditAvailableTimeScreen
+);
+
+Navigation.registerComponent(
+  "IM3514_Project.ChooseTargetScreen",
+  () => ChooseTargetScreen
+);
+Navigation.registerComponent(
+  "IM3514_Project.EnterDocumentScreen",
+  () => EnterDocumentScreen
+);
+Navigation.registerComponent(
+  "IM3514_Project.ReviewSendingStateScreen",
+  () => ReviewSendingStateScreen
 );
 
 

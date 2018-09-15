@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { View, StyleSheet, DatePickerIOS } from 'react-native';
 import { Container, Content, Form, Item, Text, Label, Input, Button } from 'native-base';
 import MultiSelect from 'react-native-multiple-select';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-
-class AddAvailableTimeScreen extends Component {
+class EditAvailableTimeScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -40,6 +40,30 @@ class AddAvailableTimeScreen extends Component {
             id: '7',
             name: '日',
         }];
+
+        Promise.all([
+            Icon.getImageSource("ios-trash", 30, color="#ff0000"), // result 0
+        ]).then(result => {
+            this.props.navigator.setButtons({
+                rightButtons: [
+                    {
+                        title: '新增可收件時間',
+                        icon: result[0],
+                        // passProps: {},
+                        id: 'deleteAvailableTime',
+                    }
+                ],
+                animated: true
+            });
+        });
+        this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+    }
+
+    onNavigatorEvent = event => {
+        if (event.type === "NavBarButtonPress" && event.id === "deleteAvailableTime") {
+            // delete item
+            console.log("Delete item.");
+        }
     }
 
     componentWillUnmount() {
@@ -204,4 +228,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default AddAvailableTimeScreen;
+export default EditAvailableTimeScreen;
