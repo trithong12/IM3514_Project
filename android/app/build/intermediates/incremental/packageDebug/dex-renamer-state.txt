@@ -1,4 +1,4 @@
-#Mon Aug 20 16:15:27 CST 2018
-base.0=/Users/tonychen/Projects/Graduation Topic/Test/IM3514_Project/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Sat Sep 15 20:04:48 CST 2018
+base.0=/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.0=/Users/tonychen/Projects/Graduation Topic/Test/IM3514_Project/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
