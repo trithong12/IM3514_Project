@@ -8,7 +8,7 @@ class ProfileScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      avatar: "../../img/Blank_avatar.jpeg",
+      avatar: "/src/img/Blank_avatar.jpeg",
       email: "",
       name: "",
       office: ""

@@ -23,6 +23,18 @@ import EditAvailableTimeScreen from './src/screens/ProfileScreen/EditAvailableTi
 import ChooseTargetScreen from './src/screens/HomeScreen/ChooseTargetScreen';
 import EnterDocumentScreen from './src/screens/HomeScreen/EnterDocumentScreen';
 import ReviewSendingStateScreen from './src/screens/HomeScreen/ReviewSendingStateScreen';
+import SendHistoryScreen from './src/screens/HomeScreen/SendHistoryScreen';
+import ReceiveHistoryScreen from './src/screens/HomeScreen/ReceiveHistoryScreen';
+
+//Manager Page
+import AddOffice from './src/screens/ManagerScreen/AddOffice';
+import ChangeOffice from './src/screens/ManagerScreen/ChangeOffice';
+import ManagerScreen from './src/screens/ManagerScreen/ManagerScreen';
+import RobotHistory from './src/screens/ManagerScreen/RobotHistory';
+import OfficeList from './src/screens/ManagerScreen/OfficeList'
+import RobotState from './src/screens/ManagerScreen/RobotState';
+import UserList from './src/screens/ManagerScreen/UserList';
+//
 
 const store = configureStore();
 
@@ -124,7 +136,45 @@ Navigation.registerComponent(
   "IM3514_Project.ReviewSendingStateScreen",
   () => ReviewSendingStateScreen
 );
+Navigation.registerComponent(
+  "IM3514_Project.SendHistoryScreen",
+  () => SendHistoryScreen
+);
+Navigation.registerComponent(
+  "IM3514_Project.ReceiveHistoryScreen",
+  () => ReceiveHistoryScreen
+);
 
+//Manager Page
+Navigation.registerComponent(
+  "IM3514_Project.ManagerScreen",
+  () => ManagerScreen
+);
+Navigation.registerComponent(
+  "IM3514_Project.OfficeList",
+  () => OfficeList
+);
+Navigation.registerComponent(
+  "IM3514_Project.AddOffice",
+  () => AddOffice
+);
+Navigation.registerComponent(
+  "IM3514_Project.ChangeOffice",
+  () => ChangeOffice
+);
+Navigation.registerComponent(
+  "IM3514_Project.RobotHistory",
+  () => RobotHistory
+);
+Navigation.registerComponent(
+  "IM3514_Project.RobotState",
+  () => RobotState
+);
+Navigation.registerComponent(
+  "IM3514_Project.UserList",
+  () => UserList
+);
+//
 
 export default () => Navigation.startSingleScreenApp({
   screen: {

@@ -2,8 +2,8 @@ const AWS = require('aws-sdk/dist/aws-sdk-react-native');
 AWS.config.update({
     region: "ap-northeast-1",
     credentials: {
-        accessKeyId: "AKIAJQVEZRJOOIKIXISQ",
-        secretAccessKey: "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"
+        accessKeyId: "AKIAI2RR4EDORCMA5X3Q",
+        secretAccessKey: "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"
     }
 });
 //AWS.config.loadFromPath('/Users/tonychen/AWS/config.json');

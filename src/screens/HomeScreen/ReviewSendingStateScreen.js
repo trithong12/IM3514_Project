@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Container, Card, CardItem, Text, Button, Icon } from 'native-base';
+import { ConfirmDialog } from 'react-native-simple-dialogs';
 
 class ReviewSendingStateScreen extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            dialogVisible: false
+        }
     }
 
     componentWillUnmount() {
-        
+
     }
 
     backToHomeHandler = () => {
@@ -19,7 +23,11 @@ class ReviewSendingStateScreen extends Component {
     }
 
     cancelRequestHandler = () => {
+        this.setState({ dialogVisible: true });
+    }
 
+    closeDialog = () => {
+        this.setState({ dialogVisible: false });
     }
 
     render() {
@@ -33,7 +41,7 @@ class ReviewSendingStateScreen extends Component {
                 <View style={{ alignSelf: "center" }}>
                     <Text style={{ fontSize: 30 }}>寄送中...</Text>
                 </View>
-                <Card style={{ width: "80%", alignSelf: "center", marginTop:20 }}>
+                <Card style={{ width: "80%", alignSelf: "center", marginTop: 20 }}>
                     <CardItem></CardItem>
                     <CardItem style={{ alignSelf: "center" }}>
                         <Text>收件人：陳大龍</Text>
@@ -56,6 +64,23 @@ class ReviewSendingStateScreen extends Component {
                         <Text>取消遞送</Text>
                     </Button>
                 </View>
+                {this.state.dialogVisible &&
+                    <ConfirmDialog
+                        title="確認取消遞送請求"
+                        message="您是否確定取消遞送請求？"
+                        visible={this.state.dialogVisible}
+                        onTouchOutside={() => this.setState({ dialogVisible: false })}
+                        positiveButton={{
+                            title: "是",
+                            onPress: this.backToHomeHandler
+                        }}
+                        negativeButton={{
+                            title: "否",
+                            onPress: this.closeDialog
+                        }
+                        }
+                    />
+                }
             </Container>
         );
     }

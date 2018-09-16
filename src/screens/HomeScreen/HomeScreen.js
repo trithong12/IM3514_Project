@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { View, TouchableOpacity } from 'react-native';
 import { Container, Content, Card, CardItem, Text, Body, Button, Right, Left } from "native-base";
 export default class HomeScreen extends Component {
   constructor(props) {
@@ -26,13 +27,28 @@ export default class HomeScreen extends Component {
     });
   }
 
+  goToSendHistoryHandler = () => {
+    console.log("goToSendHistoryHandler");
+    this.props.navigator.push({
+      screen: "IM3514_Project.SendHistoryScreen",
+      title: "遞送請求記錄"
+    });
+  }
+
+  goToReceiveHistoryHandler = () => {
+    this.props.navigator.push({
+      screen: "IM3514_Project.ReceiveHistoryScreen",
+      title: "收件記錄"
+    });
+  }
+
   render() {
     return (
       <Container>
         <Content padder>
-          <Button rounded danger 
-                  style={{ alignSelf: "center", marginTop: 20, marginBottom: 20 }}
-                  onPress={this.startRequestHandler}>
+          <Button rounded danger
+            style={{ alignSelf: "center", marginTop: 20, marginBottom: 20 }}
+            onPress={this.startRequestHandler}>
             <Text>請求遞送文件</Text>
           </Button>
 
@@ -53,7 +69,7 @@ export default class HomeScreen extends Component {
             </CardItem>
             <CardItem>
               <Left>
-                <Text>2018-09-15 下午3:30</Text>
+                <Text>2018-09-15 下午03:30</Text>
               </Left>
               <Body style={{ alignSelf: "center" }}>
                 <Text note>送出</Text>
@@ -64,7 +80,7 @@ export default class HomeScreen extends Component {
             </CardItem>
             <CardItem>
               <Left>
-                <Text>2018-09-15 上午9:30</Text>
+                <Text>2018-09-15 上午09:30</Text>
               </Left>
               <Body style={{ alignSelf: "center" }}>
                 <Text note>送出</Text>
@@ -74,7 +90,11 @@ export default class HomeScreen extends Component {
               </Right>
             </CardItem>
             <CardItem footer bordered style={{ alignSelf: "center" }}>
-              <Text>查看全部</Text>
+              <TouchableOpacity onPress={this.goToSendHistoryHandler}>
+                <View>
+                  <Text>查看全部</Text>
+                </View>
+              </TouchableOpacity>
             </CardItem>
           </Card>
 
@@ -84,7 +104,7 @@ export default class HomeScreen extends Component {
             </CardItem>
             <CardItem>
               <Left>
-                <Text>2018-09-18 下午4:00</Text>
+                <Text>2018-09-18 下午04:00</Text>
               </Left>
               <Body style={{ alignSelf: "center" }}>
                 <Text note>收到</Text>
@@ -95,7 +115,7 @@ export default class HomeScreen extends Component {
             </CardItem>
             <CardItem>
               <Left>
-                <Text>2018-09-16 下午3:12</Text>
+                <Text>2018-09-16 下午03:12</Text>
               </Left>
               <Body style={{ alignSelf: "center" }}>
                 <Text note>收到</Text>
@@ -116,7 +136,11 @@ export default class HomeScreen extends Component {
               </Right>
             </CardItem>
             <CardItem footer bordered style={{ alignSelf: "center" }}>
-              <Text>查看全部</Text>
+              <TouchableOpacity onPress={this.goToReceiveHistoryHandler}>
+                <View>
+                  <Text>查看全部</Text>
+                </View>
+              </TouchableOpacity>
             </CardItem>
           </Card>
         </Content>
