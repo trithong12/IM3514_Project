@@ -5,6 +5,7 @@ import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keybo
 import { AuthenticationDetails, CognitoUser } from 'amazon-cognito-identity-js';
 import userPool from '../../AWS/cognito_config';
 import MainTabs from '../MainTabs/MainTabs';
+import AdminScreen from '../MainTabs/AdminMainScreen';
 
 import { connect } from 'react-redux';
 import { setCognitoUser } from '../../store/actions/authActions';
@@ -22,41 +23,46 @@ class LoginScreen extends Component {
     componentWillUnmount() {
 
     }
-    
+
     loginHandler = () => {
-        const authenticationDetails = new AuthenticationDetails({
-            Username: this.state.email,
-            Password: this.state.password
-        });
-        const cognitoUser = new CognitoUser({
-            Username: this.state.email,
-            Pool: userPool
-        });
-        cognitoUser.authenticateUser(authenticationDetails, {
-            onSuccess: (result) => {
-                console.log('onSuccess', typeof(result), result);
-                console.log('access token + ' + result.getAccessToken().getJwtToken());
-                console.log("CognitoUser1: ", typeof(cognitoUser), cognitoUser);
-                this.props.setCognitoUser(cognitoUser);
-                // cognitoUser.setDeviceStatusRemembered({
-                //     onSuccess: function (result) {
-                //         console.log('call result: ' + result);
-                //     },
-                //     onFailure: function(err) {
-                //         alert(err);
-                //     }
-                // });
-                MainTabs();
-            },
-            onFailure: (err) => {
-                console.log('onFailure', err);
-                alert(err);
-            },
-            mfaRequired: (codeDeliveryDetails) => {
-                console.log('mfaRequired', codeDeliveryDetails),
-                alert(codeDeliveryDetails);
-            }
-        });
+        if (this.state.email === 'admin' && this.state.password === 'admin') {
+            AdminScreen();
+        }
+        else {
+            const authenticationDetails = new AuthenticationDetails({
+                Username: this.state.email,
+                Password: this.state.password
+            });
+            const cognitoUser = new CognitoUser({
+                Username: this.state.email,
+                Pool: userPool
+            });
+            cognitoUser.authenticateUser(authenticationDetails, {
+                onSuccess: (result) => {
+                    console.log('onSuccess', typeof (result), result);
+                    console.log('access token + ' + result.getAccessToken().getJwtToken());
+                    console.log("CognitoUser1: ", typeof (cognitoUser), cognitoUser);
+                    this.props.setCognitoUser(cognitoUser);
+                    // cognitoUser.setDeviceStatusRemembered({
+                    //     onSuccess: function (result) {
+                    //         console.log('call result: ' + result);
+                    //     },
+                    //     onFailure: function(err) {
+                    //         alert(err);
+                    //     }
+                    // });
+                    MainTabs();
+                },
+                onFailure: (err) => {
+                    console.log('onFailure', err);
+                    alert("Error: ", err);
+                },
+                mfaRequired: (codeDeliveryDetails) => {
+                    console.log('mfaRequired', codeDeliveryDetails),
+                        alert(codeDeliveryDetails);
+                }
+            });
+        }
     }
     goToRegisterHandler = () => {
         this.props.navigator.push({
@@ -163,5 +169,5 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(null, {setCognitoUser})(LoginScreen);
+export default connect(null, { setCognitoUser })(LoginScreen);
 // export default LoginScreen;
