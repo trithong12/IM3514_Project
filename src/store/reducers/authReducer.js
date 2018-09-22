@@ -1,7 +1,8 @@
-import { SET_COGNITO_USER } from '../actions/actionTypes';
+import { SET_COGNITO_USER, SET_CURRENT_USER } from '../actions/actionTypes';
 
 const initialState = {
-    cognitoUser: null
+    cognitoUser: null,
+    currentUser: null
 }
 
 const reducer = (state = initialState, action) => {
@@ -11,6 +12,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 cognitoUser: action.cognitoUser
+            }
+        case SET_CURRENT_USER:
+            return {
+                ...state,
+                currentUser: action.currentUser
             }
         default:
             return state;

@@ -1,3 +1,4 @@
 export {
-    setCognitoUser
+    setCognitoUser,
+    setCurrentUser
 } from './authActions';

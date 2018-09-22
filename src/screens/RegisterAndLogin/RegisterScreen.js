@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Form, Item, Input, Label, Button, Text, Container } from 'native-base';
-import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, ScrollView } from 'react-native';
-
+import { Form, Item, Input, Label, Button, Text, Container, Picker, Icon } from 'native-base';
+import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, ScrollView, FlatList } from 'react-native';
+import db from '../../AWS/dynamodb_config';
 import userPool from '../../AWS/cognito_config';
 import { CognitoUserAttribute } from 'amazon-cognito-identity-js';
 
@@ -13,14 +13,24 @@ export default class RegisterScreen extends Component {
             password: "",
             confirmPassword: "",
             name: "",
-            office: ""
+            office: "",
+            officeList: []
         };
+        this.loadOffice();
     }
 
-    onValueChange(value) {
-        this.setState({
-            selected: value
-        });
+    loadOffice = () => {
+        const params = {
+            TableName: "Map",
+            ProjectionExpression: "pose, office_id"
+        }
+        db.scan(params, (err, data) => {
+            console.log("office list : ", data)
+            this.setState({
+                officeList: data.Items,
+                office: data.Items[0].office_id.S
+            })
+        })
     }
 
     registerHandler = () => {
@@ -29,7 +39,7 @@ export default class RegisterScreen extends Component {
         attributeList.push(new CognitoUserAttribute({ Name: 'name', Value: this.state.name }));
         attributeList.push(new CognitoUserAttribute({ Name: 'custom:office', Value: this.state.office }));
         var cognitoUser;
-        
+
         //Call SignUp function
         userPool.signUp(this.state.email, this.state.password,
             attributeList, null, (err, result) => {
@@ -38,7 +48,45 @@ export default class RegisterScreen extends Component {
                     return;
                 }
                 cognitoUser = result.user;
-                console.log('cognitoUser', cognitoUser)
+                console.log('cognitoUser', cognitoUser);
+
+                // Get selected office object
+                const selectedOffice = this.state.officeList.find(item => { return item.office_id.S === this.state.office })
+                console.log("selected office = ", selectedOffice);
+
+                /* Add new user to dynamoDB */
+                var userParams = {
+                    TableName: "User",
+                    Item: {
+                        "user_id": { S: this.state.email },
+                        "user_name": { S: this.state.name },
+                        "use_record_count": { N: "0" },
+                        "cancel_count": { N: "0" },
+                        "not_received_count": { N: "0" },
+                        "confirm": { BOOL: false },
+                        "office": { M: selectedOffice }
+                    }
+                }
+                db.putItem(userParams, (err, data) => {
+                    if (data == null) {
+                        console.log("Add new user fail.")
+                    } else {
+                        console.log("Add new user success!");
+                    }
+                })
+
+                // Update office user in "Map" table (Because no relation......)
+                const officeParams = {
+                    TableName: "Map",
+                    Key: { "office_id": { S: this.state.office } },
+                    ExpressionAttributeNames: { "#user_id": "user_id" },
+                    ExpressionAttributeValues: { ":user_id": { S: this.state.email } },
+                    UpdateExpression: "SET #user_id = :user_id"
+                }
+                db.updateItem(officeParams, (err, data) => {
+                    console.log(data != null ? "Register success!" : "Register fail...");
+                })
+
                 this.props.navigator.resetTo({
                     screen: 'IM3514_Project.ConfirmationScreen', // unique ID registered with Navigation.registerScreen
                     title: '驗證信箱', // title of the screen as appears in the nav bar (optional)
@@ -52,7 +100,19 @@ export default class RegisterScreen extends Component {
         );
     }
 
+    onValueChange(value) {
+        this.setState({
+            office: value,
+        });
+    }
+
     render() {
+        const officeMenu = this.state.officeList.map((item, index) => {
+            return (
+                <Picker.Item value={item.office_id.S} label={item.office_id.S} key={index} />
+            );
+        });
+
         return (
             // 按外面會收起鍵盤
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -109,9 +169,15 @@ export default class RegisterScreen extends Component {
                                         onChangeText={(inputName) => this.setState({ name: inputName })}
                                     />
                                 </Item>
-                                <Item floatingLabel last>
-                                    <Label>辦公室(SL)</Label>
-                                    <Input
+                                <Item style={{ flexDirection: 'row', width: "95%" }}>
+                                <Label>辦公室(SL)</Label>
+                                    <Picker
+                                        selectedValue={this.state.office}
+                                        onValueChange={this.onValueChange.bind(this)}
+                                    >
+                                        {officeMenu}
+                                    </Picker>
+                                    {/* <Input
                                         autoCorrect={false}
                                         getRef={(input) => this.officeInput = input}
                                         keyboardType="numeric"
@@ -119,9 +185,20 @@ export default class RegisterScreen extends Component {
                                         onSubmitEditing={(event) => this.registerHandler()}
                                         value={this.state.office}
                                         onChangeText={(inputOffice) => this.setState({ office: inputOffice })}
-                                    />
+                                    /> */}
                                 </Item>
-
+                                {/* <Item>
+                                    <View style={{flexDirection: 'row', width: "100%"}}>
+                                        <Label style={{textAlign: 'left'}}>辦公室(SL)</Label>
+                                        <Picker
+                                            style={{  }}
+                                            selectedValue={this.state.office}
+                                            onValueChange={this.onValueChange.bind(this)}
+                                        >
+                                            {officeMenu}
+                                        </Picker>
+                                    </View>
+                                </Item> */}
                                 <View style={styles.buttonContainer}>
                                     <Button
                                         bordered success
@@ -133,8 +210,11 @@ export default class RegisterScreen extends Component {
                                 </View>
                             </Form>
                         </KeyboardAvoidingView>
+
+
                     </Container>
                 </ScrollView>
+
             </TouchableWithoutFeedback>
         );
     }
