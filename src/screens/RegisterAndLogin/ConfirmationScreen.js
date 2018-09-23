@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Navigation } from 'react-native-navigation';
 import { Form, Item, Input, Label, Button, Text } from 'native-base';
 import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard } from 'react-native';
-
+import db from '../../AWS/dynamodb_config';
 import { CognitoUser } from 'amazon-cognito-identity-js';
 import userPool from '../../AWS/cognito_config';
 
@@ -26,6 +26,19 @@ export default class LoginScreen extends Component {
                 return;
             }
             console.log("Success m: ", result);
+
+            /* DynamoDB : Update confirm attribute  */
+            var params = {
+                TableName: "User",
+                ExpressionAttributeNames: {"#confirm": "confirm"},
+                ExpressionAttributeValues: {":t": {BOOL: true}},
+                Key: {"user_id": {S: this.props.email}},
+                UpdateExpression: "SET #confirm = :t"
+            }
+            db.updateItem(params, function(err, data) {
+                console.log(data != null ? "Confrim success!" : "Confirm fail...");
+            });
+
             this.props.navigator.resetTo({
                 screen: 'IM3514_Project.ConfirmSuccessScreen', // unique ID registered with Navigation.registerScreen
                 title: "完成驗證信箱", // navigation bar title of the pushed screen (optional)

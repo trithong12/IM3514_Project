@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Form, Item, Input, Label, Button, Text } from 'native-base';
-import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { View, StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Picker } from 'react-native';
 
 import { AuthenticationDetails, CognitoUser } from 'amazon-cognito-identity-js';
 import userPool from '../../AWS/cognito_config';
+import db from '../../AWS/dynamodb_config';
 import MainTabs from '../MainTabs/MainTabs';
 import AdminScreen from '../MainTabs/AdminMainScreen';
 
 import { connect } from 'react-redux';
-import { setCognitoUser } from '../../store/actions/authActions';
+import { setCognitoUser, setCurrentUser } from '../../store/actions/authActions';
 
 class LoginScreen extends Component {
     constructor(props) {
@@ -43,6 +44,22 @@ class LoginScreen extends Component {
                     console.log('access token + ' + result.getAccessToken().getJwtToken());
                     console.log("CognitoUser1: ", typeof (cognitoUser), cognitoUser);
                     this.props.setCognitoUser(cognitoUser);
+
+                    /* Get user information from dynamodb */
+                    const params = {
+                        TableName: "User",
+                        Key: { "user_id": { S: this.state.email } },
+                        ProjectionExpression: "user_id, user_name, office"
+                    };
+                    db.getItem(params, (err, data) => {
+                        const currentUser = {
+                            email: data.Item.user_id.S,
+                            name: data.Item.user_name.S,
+                            office: data.Item.office.M
+                        }
+                        this.props.setCurrentUser(currentUser);
+                        MainTabs();
+                    });
                     // cognitoUser.setDeviceStatusRemembered({
                     //     onSuccess: function (result) {
                     //         console.log('call result: ' + result);
@@ -51,7 +68,7 @@ class LoginScreen extends Component {
                     //         alert(err);
                     //     }
                     // });
-                    MainTabs();
+
                 },
                 onFailure: (err) => {
                     console.log('onFailure', err);
@@ -81,6 +98,9 @@ class LoginScreen extends Component {
 
     render() {
         return (
+
+
+
             // 按外面會收起鍵盤
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={{ flex: 1 }}>
@@ -111,7 +131,7 @@ class LoginScreen extends Component {
                                     onChangeText={(inputPassword) => this.setState({ password: inputPassword })}
                                 />
                             </Item>
-
+                            
                             <View style={styles.buttonContainer}>
                                 <Button
                                     bordered
@@ -169,5 +189,12 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(null, { setCognitoUser })(LoginScreen);
+const mapDispatchToProps = dispatch => {
+    return {
+        setCurrentUser: currentUser => dispatch(setCurrentUser(currentUser)),
+        setCognitoUser: cognitoUser => dispatch(setCognitoUser(cognitoUser))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps/*{ setCurrentUser, setCognitoUser }*/)(LoginScreen);
 // export default LoginScreen;

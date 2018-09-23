@@ -211,7 +211,7 @@ class EditAvailableTimeScreen extends Component {
                             </View>)
                         }
                         <Button rounded style={{marginTop:10, alignSelf:"center"}}>
-                            <Text>確認新增</Text>
+                            <Text>確認變更</Text>
                         </Button>
                     </Form>
                 </Content>

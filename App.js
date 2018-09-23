@@ -23,6 +23,7 @@ import EditAvailableTimeScreen from './src/screens/ProfileScreen/EditAvailableTi
 import ChooseTargetScreen from './src/screens/HomeScreen/ChooseTargetScreen';
 import EnterDocumentScreen from './src/screens/HomeScreen/EnterDocumentScreen';
 import ReviewSendingStateScreen from './src/screens/HomeScreen/ReviewSendingStateScreen';
+import ReviewComingStateScreen from './src/screens/HomeScreen/ReviewComingStateScreen';
 import SendHistoryScreen from './src/screens/HomeScreen/SendHistoryScreen';
 import ReceiveHistoryScreen from './src/screens/HomeScreen/ReceiveHistoryScreen';
 
@@ -101,11 +102,15 @@ Navigation.registerComponent(
 );
 Navigation.registerComponent(
   "IM3514_Project.ChangeNameScreen",
-  () => ChangeNameScreen
+  () => ChangeNameScreen,
+  store,
+  Provider
 );
 Navigation.registerComponent(
   "IM3514_Project.ChangeOfficeScreen",
-  () => ChangeOfficeScreen
+  () => ChangeOfficeScreen,
+  store,
+  Provider
 );
 Navigation.registerComponent(
   "IM3514_Project.ChangePasswordScreen",
@@ -126,15 +131,23 @@ Navigation.registerComponent(
 
 Navigation.registerComponent(
   "IM3514_Project.ChooseTargetScreen",
-  () => ChooseTargetScreen
+  () => ChooseTargetScreen,
+  store,
+  Provider
 );
 Navigation.registerComponent(
   "IM3514_Project.EnterDocumentScreen",
-  () => EnterDocumentScreen
+  () => EnterDocumentScreen,
+  store,
+  Provider
 );
 Navigation.registerComponent(
   "IM3514_Project.ReviewSendingStateScreen",
   () => ReviewSendingStateScreen
+);
+Navigation.registerComponent(
+  "IM3514_Project.ReviewComingStateScreen",
+  () => ReviewComingStateScreen
 );
 Navigation.registerComponent(
   "IM3514_Project.SendHistoryScreen",

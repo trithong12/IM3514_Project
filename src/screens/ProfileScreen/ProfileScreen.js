@@ -3,6 +3,9 @@ import { Container, Content, List, ListItem, Card, CardItem, Text, Left, Right, 
 import { TouchableOpacity, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import s3_bucket from '../../AWS/s3_config';
+import userPool from '../../AWS/cognito_config';
+import db from '../../AWS/dynamodb_config';
+import profileImage from '../../img/Blank_avatar.jpeg'
 
 class ProfileScreen extends Component {
   constructor(props) {
@@ -14,7 +17,6 @@ class ProfileScreen extends Component {
       office: ""
     }
     this.loadData();
-
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
   }
 
@@ -32,20 +34,37 @@ class ProfileScreen extends Component {
       });
     });
     const cognitoUser = this.props.cognitoUser;
-    cognitoUser.getUserAttributes(function (err, result) {
-      if (err) {
-        alert(err);
-        return;
-      }
-      for (i = 0; i < result.length; i++) {
-        console.log('attribute [' + i + '] ' + result[i].getName() + ' has value ' + result[i].getValue());
-      }
-      outerThis.setState({
-        email: result[4].getValue(),
-        name: result[2].getValue(),
-        office: result[3].getValue()
-      });
-    });
+
+    //console.log("office id = ",JSON.stringify(this.props.currentUser.office))
+    
+    /* Get current user profile */
+    // var params = {
+    //   TableName: "User",
+    //   Key: { "user_id": { S: this.props.currentUser.email } },
+    //   ProjectionExpression: "user_id, user_name, office_id"
+    // };
+    // db.getItem(params, (err, data) => {
+    //   this.setState({
+    //     email: data.Item.user_id.S,
+    //     name: data.Item.user_name.S,
+    //     office: data.Item.office_id.S
+    //   })
+    // });
+
+    // cognitoUser.getUserAttributes(function (err, result) {
+    //   if (err) {
+    //     alert(err);
+    //     return;
+    //   }
+    //   for (i = 0; i < result.length; i++) {
+    //     console.log('attribute [' + i + '] ' + result[i].getName() + ' has value ' + result[i].getValue());
+    //   }
+    //   outerThis.setState({
+    //     email: result[4].getValue(),
+    //     //name: result[2].getValue(),
+    //     //office: result[3].getValue()
+    //   });
+    // });
   }
 
   onNavigatorEvent = event => {
@@ -61,16 +80,16 @@ class ProfileScreen extends Component {
       screen: "IM3514_Project.ChangeEmailScreen",
       title: "變更信箱",
       passProps: {
-        email: this.state.email
+        email: this.props.currentUser.email
       }
     });
   }
   changeNameHandler = () => {
     this.props.navigator.push({
       screen: "IM3514_Project.ChangeNameScreen",
-      title: "變更名稱",
+      title: "變更姓名",
       passProps: {
-        name: this.state.name
+        name: this.props.currentUser.name
       }
     });
   }
@@ -79,7 +98,7 @@ class ProfileScreen extends Component {
       screen: "IM3514_Project.ChangeOfficeScreen",
       title: "變更辦公室",
       passProps: {
-        office: this.state.office
+        office: this.props.currentUser.office.office_id.S
       }
     });
   }
@@ -104,22 +123,22 @@ class ProfileScreen extends Component {
         <Content>
           <List>
             <ListItem style={styles.thumbnailContainer}>
-              <Thumbnail large source={{ uri: uri }} />
+              <Thumbnail large source={profileImage/*{ uri: uri }*/} />
             </ListItem>
             <ListItem>
               <Left>
-                <Text>電子信箱：{this.state.email}</Text>
+                <Text>電子信箱：{this.props.currentUser.email}</Text>
               </Left>
-              <TouchableOpacity onPress={this.changeEmailHandler}>
+              {/* <TouchableOpacity onPress={this.changeEmailHandler}>
                 <Right style={styles.rightStyle}>
                   <Text style={styles.changeText}>變更 </Text>
                   <Icon name="arrow-forward" />
                 </Right>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
             </ListItem>
             <ListItem>
               <Left>
-                <Text>姓名：{this.state.name}</Text>
+                <Text>姓名：{this.props.currentUser.name}</Text>
               </Left>
               <TouchableOpacity onPress={this.changeNameHandler}>
                 <Right style={styles.rightStyle}>
@@ -130,7 +149,7 @@ class ProfileScreen extends Component {
             </ListItem>
             <ListItem>
               <Left>
-                <Text>辦公室：SL{this.state.office}</Text>
+                <Text>辦公室：{this.props.currentUser.office.office_id.S}</Text>
               </Left>
               <TouchableOpacity onPress={this.changeOfficeHandler}>
                 <Right style={styles.rightStyle}>
@@ -185,7 +204,8 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
   return {
-    cognitoUser: state.auth.cognitoUser
+    cognitoUser: state.auth.cognitoUser,
+    currentUser: state.auth.currentUser
   }
 }
 
