@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 import { Container, Text, List, ListItem, Left, Body, Thumbnail, Separator } from 'native-base';
 import { connect } from 'react-redux';
 import db from '../../AWS/dynamodb_config';
@@ -21,7 +21,7 @@ class ChooseTargetScreen extends Component {
         const params = {
             TableName: "User",
             ExpressionAttributeNames: {"#user_id":"user_id"},
-            ExpressionAttributeValues: {":user_id":{S:this.props.currentUser.email}},
+            ExpressionAttributeValues: {":user_id": this.props.currentUser.email},
             FilterExpression: "#user_id <> :user_id"
             //ProjectionExpression: "user_id, user_name, office_id"
         }
@@ -32,9 +32,9 @@ class ChooseTargetScreen extends Component {
                     console.log("user = ", user);
                         return {
                             key: i.toString(),
-                            user_id: user.user_id.S,
+                            user_id: user.user_id,
                             //office_id: user.office_id.S,
-                            user_name: user.user_name.S,
+                            user_name: user.user_name,
                             office: user.office
                         }
                     
@@ -75,7 +75,7 @@ class ChooseTargetScreen extends Component {
                                 </Left>
                                 <Body>
                                     <Text>{info.item.user_name}</Text>
-                                    <Text note>{info.item.office.M.office_id.S}</Text>
+                                    <Text note>{info.item.office.office_id}</Text>
                                 </Body>
                             </ListItem>
                         )}

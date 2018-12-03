@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTMultiplicationAnimatedNode.m \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTMultiplicationAnimatedNode.h \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTMultiplicationAnimatedNode.m \
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTMultiplicationAnimatedNode.h \
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h \
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h

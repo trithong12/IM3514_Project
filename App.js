@@ -82,7 +82,9 @@ Navigation.registerComponent(
 
 Navigation.registerComponent(
   "IM3514_Project.HomeScreen",
-  () => HomeScreen
+  () => HomeScreen, 
+  store, 
+  Provider
 );
 
 Navigation.registerComponent(
@@ -151,11 +153,15 @@ Navigation.registerComponent(
 );
 Navigation.registerComponent(
   "IM3514_Project.SendHistoryScreen",
-  () => SendHistoryScreen
+  () => SendHistoryScreen,
+  store,
+  Provider
 );
 Navigation.registerComponent(
   "IM3514_Project.ReceiveHistoryScreen",
-  () => ReceiveHistoryScreen
+  () => ReceiveHistoryScreen,
+  store,
+  Provider
 );
 
 //Manager Page

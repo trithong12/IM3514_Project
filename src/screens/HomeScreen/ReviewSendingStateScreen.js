@@ -57,7 +57,7 @@ class ReviewSendingStateScreen extends Component {
                 <View style={{ alignSelf: "center", flexDirection: "row", marginTop: 20 }}>
                     <Button block success onPress={this.backToHomeHandler}
                         style={{ marginRight: 20 }}>
-                        <Text>Ok</Text>
+                        <Text>完成</Text>
                     </Button>
                     <Button block danger onPress={this.cancelRequestHandler}
                         style={{ marginLeft: 20 }}>

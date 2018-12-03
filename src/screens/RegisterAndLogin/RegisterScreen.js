@@ -27,8 +27,8 @@ export default class RegisterScreen extends Component {
         db.scan(params, (err, data) => {
             console.log("office list : ", data)
             this.setState({
-                officeList: data.Items,
-                office: data.Items[0].office_id.S
+                officeList: data.Items,  // Office array
+                office: data.Items[0].office_id
             })
         })
     }
@@ -51,23 +51,23 @@ export default class RegisterScreen extends Component {
                 console.log('cognitoUser', cognitoUser);
 
                 // Get selected office object
-                const selectedOffice = this.state.officeList.find(item => { return item.office_id.S === this.state.office })
+                const selectedOffice = this.state.officeList.find(item => { return item.office_id === this.state.office })
                 console.log("selected office = ", selectedOffice);
 
                 /* Add new user to dynamoDB */
                 var userParams = {
                     TableName: "User",
                     Item: {
-                        "user_id": { S: this.state.email },
-                        "user_name": { S: this.state.name },
-                        "use_record_count": { N: "0" },
-                        "cancel_count": { N: "0" },
-                        "not_received_count": { N: "0" },
-                        "confirm": { BOOL: false },
-                        "office": { M: selectedOffice }
+                        "user_id": this.state.email,
+                        "user_name": this.state.name ,
+                        "use_record_count": "0",
+                        "cancel_count": "0",
+                        "not_received_count": "0" ,
+                        "confirm": false,
+                        "office": selectedOffice
                     }
                 }
-                db.putItem(userParams, (err, data) => {
+                db.put(userParams, (err, data) => {
                     if (data == null) {
                         console.log("Add new user fail.")
                     } else {
@@ -78,12 +78,12 @@ export default class RegisterScreen extends Component {
                 // Update office user in "Map" table (Because no relation......)
                 const officeParams = {
                     TableName: "Map",
-                    Key: { "office_id": { S: this.state.office } },
+                    Key: { "office_id": this.state.office },
                     ExpressionAttributeNames: { "#user_id": "user_id" },
-                    ExpressionAttributeValues: { ":user_id": { S: this.state.email } },
+                    ExpressionAttributeValues: { ":user_id": this.state.email },
                     UpdateExpression: "SET #user_id = :user_id"
                 }
-                db.updateItem(officeParams, (err, data) => {
+                db.update(officeParams, (err, data) => {
                     console.log(data != null ? "Register success!" : "Register fail...");
                 })
 
@@ -109,7 +109,7 @@ export default class RegisterScreen extends Component {
     render() {
         const officeMenu = this.state.officeList.map((item, index) => {
             return (
-                <Picker.Item value={item.office_id.S} label={item.office_id.S} key={index} />
+                <Picker.Item value={item.office_id} label={item.office_id} key={index} />
             );
         });
 

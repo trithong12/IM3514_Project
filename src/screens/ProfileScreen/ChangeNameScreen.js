@@ -15,16 +15,30 @@ class ChangeNameScreen extends Component {
     }
 
     resetNameHandler = () => {
-        const params = {
+        const userParams = {
             TableName: "User",
             ExpressionAttributeNames: {"#user_name": "user_name"},
-            ExpressionAttributeValues: {":user_name": {S: this.state.name}},
-            Key: {"user_id": {S: this.props.currentUser.email}},
+            ExpressionAttributeValues: {":user_name": this.state.name},
+            Key: {"user_id": this.props.currentUser.email},
             UpdateExpression: "SET #user_name = :user_name"
         }
-        db.updateItem(params, (err, data) => {
-            console.log(data != null ? "Reset name success!" : "Reset name fail...");
+        db.update(userParams, (err, data) => {
+            console.log(data != null ? "USER --> Reset name success!" : "USER --> Reset name fail...");
         })
+
+        // const recordParams = {
+        //     TableName: "Record",
+        //     ExpressionAttributeNames: { "#requester_name": "requester_name" },
+        //     ExpressionAttributeValues: { ":requester_name": this.state.name },
+        //     Key: { "user_id": this.props.currentUser.email },
+        //     UpdateExpression: "SET #requester_name = :requester_name"
+        // };
+        // db.update(recordParams, (err, data) => {
+        //     if(err){
+        //         console.log("RO err : ", err)
+        //     }
+        //     console.log(data != null ? "ROCORD --> Reset name success!" : "RECORD --> Reset name fail...");
+        // })
 
         this.props.setCurrentUser({
             email: this.props.currentUser.email,

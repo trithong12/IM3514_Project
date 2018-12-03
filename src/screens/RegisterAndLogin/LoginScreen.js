@@ -48,14 +48,14 @@ class LoginScreen extends Component {
                     /* Get user information from dynamodb */
                     const params = {
                         TableName: "User",
-                        Key: { "user_id": { S: this.state.email } },
+                        Key: { "user_id": this.state.email },
                         ProjectionExpression: "user_id, user_name, office"
                     };
-                    db.getItem(params, (err, data) => {
+                    db.get(params, (err, data) => {
                         const currentUser = {
-                            email: data.Item.user_id.S,
-                            name: data.Item.user_name.S,
-                            office: data.Item.office.M
+                            email: data.Item.user_id,
+                            name: data.Item.user_name,
+                            office: data.Item.office
                         }
                         this.props.setCurrentUser(currentUser);
                         MainTabs();

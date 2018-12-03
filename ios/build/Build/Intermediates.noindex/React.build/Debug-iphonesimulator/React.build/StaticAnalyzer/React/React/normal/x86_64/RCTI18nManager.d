@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native/React/Modules/RCTI18nManager.m \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native/React/Modules/RCTI18nManager.h \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native/React/Modules/RCTI18nUtil.h
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native/React/Modules/RCTI18nManager.m \
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native/React/Modules/RCTI18nManager.h \
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native/React/Modules/RCTI18nUtil.h

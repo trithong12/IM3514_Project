@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/Animations/SidebarAirbnbAnimation.m \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/Animations/SidebarAirbnbAnimation.h \
-  /Users/tonychen/Projects/Graduation\ Topic/Local_Repo_10/IM3514_Project/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/Animations/SidebarAnimation.h
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/Animations/SidebarAirbnbAnimation.m \
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/Animations/SidebarAirbnbAnimation.h \
+  /Users/yu-chen/Desktop/IM3514_Project/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/Animations/SidebarAnimation.h
