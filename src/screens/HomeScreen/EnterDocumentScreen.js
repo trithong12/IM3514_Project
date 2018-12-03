@@ -16,15 +16,24 @@ class EnterDocumentScreen extends Component {
         const recordparams = {
             TableName: "Record",
             Item: {
-                "user_id": {S: this.props.currentUser.email},
-                "request_time": {S: new Date().toLocaleString()},
-                "requester_office": { M: this.props.currentUser.office},
-                "receiver_office": { M: this.props.targetUser.office.M },
-                "finished": {N: "0"}   
+                "user_id": this.props.currentUser.email, // Equals 'requester_id'
+                "requester_name": this.props.currentUser.name,
+                "receiver_id": this.props.targetUser.user_id,
+                "receiver_name": this.props.targetUser.user_name,
+                "request_time": new Date().toLocaleString(),
+                "requester_office": this.props.currentUser.office,
+                "receiver_office": this.props.targetUser.office,
+                "finished": 0   
             }
         }
-        db.putItem(recordparams, (err, data) => {
-            console.log(data != null ? "Send request Succeess!" : "Send request fail...")
+        db.put(recordparams, (err, data) => {
+            if(err){
+                console.log("err msgs: ", err)
+            }
+            else{
+                console.log(data != null ? "Send request Succeess!" : "Send request fail...")
+            }
+            
         })
         
         this.goToReviewSendingStateHandler();
@@ -50,7 +59,7 @@ class EnterDocumentScreen extends Component {
                     </Item>
                     <Item>
                         <Label>辦公室：</Label>
-                        <Input value={this.props.targetUser.office.M.office_id.S} editable={false}></Input>
+                        <Input value={this.props.targetUser.office.office_id} editable={false}></Input>
                     </Item>
                     <Item>
                         <Label>文件名稱：</Label>
@@ -69,7 +78,7 @@ class EnterDocumentScreen extends Component {
 const mapStateToProps = state => {
     return {
         currentUser: state.auth.currentUser
-    }
-}
+    };
+};
 
 export default connect(mapStateToProps)(EnterDocumentScreen);

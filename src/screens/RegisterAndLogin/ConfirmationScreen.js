@@ -31,11 +31,11 @@ export default class LoginScreen extends Component {
             var params = {
                 TableName: "User",
                 ExpressionAttributeNames: {"#confirm": "confirm"},
-                ExpressionAttributeValues: {":t": {BOOL: true}},
-                Key: {"user_id": {S: this.props.email}},
+                ExpressionAttributeValues: {":t": true},
+                Key: {"user_id": this.props.email},
                 UpdateExpression: "SET #confirm = :t"
             }
-            db.updateItem(params, function(err, data) {
+            db.update(params, function(err, data) {
                 console.log(data != null ? "Confrim success!" : "Confirm fail...");
             });
 

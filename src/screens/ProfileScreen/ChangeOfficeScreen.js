@@ -14,6 +14,7 @@ class ChangeOfficeScreen extends Component {
             officeList: []
         }
         this.loadOffice();
+        console.log("current office : ", this.props.office);
     }
 
     loadOffice = () => {
@@ -25,7 +26,7 @@ class ChangeOfficeScreen extends Component {
             console.log("office list : ", data)
             this.setState({
                 officeList: data.Items,
-                office: data.Items[0].office_id.S
+                office: data.Items[0].office_id
             })
         })
     }
@@ -39,27 +40,27 @@ class ChangeOfficeScreen extends Component {
     resetOfficeHandler = () => {
 
         // Get selected office object
-        const selectedOffice = this.state.officeList.find(item => { return item.office_id.S === this.state.office })
+        const selectedOffice = this.state.officeList.find(item => { return item.office_id === this.state.office })
         console.log("selected office = ", selectedOffice);
         const userParams = {
             TableName: "User",
             ExpressionAttributeNames: { "#office": "office" },
-            ExpressionAttributeValues: { ":office": { M: selectedOffice } },
-            Key: { "user_id": { S: this.props.currentUser.email } },
+            ExpressionAttributeValues: { ":office": selectedOffice },
+            Key: { "user_id": this.props.currentUser.email },
             UpdateExpression: "SET #office = :office"
         }
-        db.updateItem(userParams, (err, data) => {
+        db.update(userParams, (err, data) => {
             console.log(data != null ? "Reset User office success!" : "Reset User office fail...");
         })
 
         const officeParams = {
             TableName: "Map",
-            Key: { "office_id": { S: this.state.office } },
+            Key: { "office_id": this.state.office },
             ExpressionAttributeNames: { "#user_id": "user_id" },
-            ExpressionAttributeValues: { ":user_id": { S: this.props.currentUser.email } },
+            ExpressionAttributeValues: { ":user_id": this.props.currentUser.email },
             UpdateExpression: "SET #user_id = :user_id"
         }
-        db.updateItem(officeParams, (err, data) => {
+        db.update(officeParams, (err, data) => {
             console.log(data != null ? "Reset Map success!" : "Reset Map fail...");
         })
 
@@ -78,7 +79,7 @@ class ChangeOfficeScreen extends Component {
     render() {
         const officeMenu = this.state.officeList.map((item, index) => {
             return (
-                <Picker.Item value={item.office_id.S} label={item.office_id.S} key={index} />
+                <Picker.Item value={item.office_id} label={item.office_id} key={index} />
             );
         });
 
@@ -88,7 +89,7 @@ class ChangeOfficeScreen extends Component {
                     <Item>
                         <Label>您目前辦公室：</Label>
                         <Input
-                            value={this.props.office}
+                            value={this.props.currentUser.office.office_id}
                             editable={false}
                         />
                     </Item>

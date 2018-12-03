@@ -149,7 +149,7 @@ class ProfileScreen extends Component {
             </ListItem>
             <ListItem>
               <Left>
-                <Text>辦公室：{this.props.currentUser.office.office_id.S}</Text>
+                <Text>辦公室：{this.props.currentUser.office.office_id}</Text>
               </Left>
               <TouchableOpacity onPress={this.changeOfficeHandler}>
                 <Right style={styles.rightStyle}>

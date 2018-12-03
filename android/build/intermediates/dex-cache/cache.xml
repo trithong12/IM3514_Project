@@ -3,336 +3,336 @@
 
     <item
         is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_267354166ba4436324c42e72a2a861dd360396a1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_06e4851fe5d0e82a8fd78fb203d265bf563c417c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_2c395e1bf12852338ba561de03314e186b2f0591.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_b0f2bd7053ea81f7885b1e8f1835234fca68a6a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_0f92aa55727974f20f69d7c21ea43567f9e7d9b6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_73186bf0c058b471b0f5299d2d94565f91247d02.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_fcfb9153d46a34475b58eaa1a68f40ae01eee8df.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_221b845d9e9b51e0a737100a4f04fbd2c533ffcf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-toolbar-1.5.4_252ba2182618186a4d75cbea267835e489bbc699.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_5f9eac8be29e6096f3de72ad5ccfc6b6de1057ec.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_03f91d87603878786888e6efb60f2ae21594ebbb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_b104db34bda381b87190f1b47223e6a6bf5f0277.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_15471ab7ac41d3eb6f7467f17ad62f1af91b5eeb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/library-2.4.0_fd2948d39569f9fe1e8519ab19b430721e520740.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-1.5.4_3f0c1d366f54a0b103a0172260c89d416a5045aa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_d9af4b3f5bb38f2f33dcbb5873777e853e09e021.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_41ae3f4d7a98dce16fe512280e3c59e069d65d15.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_29770a887d2a6874ba68962162c784f98bb8f003.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_3bb99497fe241c3ce150f718dcb64fb844df766f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="95519720620b553f63afc789beba9ad582807f7c">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_e507bd70234852ffae8feff6d52bda42afa94fea.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.aurelhubert-ahbottomnavigation-2.0.6_6a1bfc489a54459383e78b9089f05f0a724baaf4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_8342080ea97d647d649b944fadc3d697b129bead.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_827fd6d606648c34f4490dfc15941521cad9df11.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/IM3514_Project/react-native-vector-icons/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/IM3514_Project-react-native-vector-icons-unspecified_c370ed297299e954fecf7e6403201a5101ab998c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_35a5b690d3a6364044042687d76b12250ec7c882.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_ef59970de1c99ed3269dcedffd189a9a786bf082.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_aca366da067257046c7e6ff2fc865768d0e01684.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_270529060c20568a7b39399c38595bf4e5d48d54.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/IM3514_Project/react-native-navigation/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f80cd1c1226ad216a8c749e9c7379dace29080d5">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/IM3514_Project-react-native-navigation-unspecified_4f6221aa2270cab7119798612d63921a154119e6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_cb140ec13e9eb1f76f0216c34026b157190c6775.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_7da8bf9949d09a5ff76cab6380794ea57cf0d573.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/IM3514_Project/amazon-cognito-identity-js/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="006c93ed3cba725e4381973e85ae131ab1aeed73">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/IM3514_Project-amazon-cognito-identity-js-unspecified_4dab70f9bf2302efb27187af0b8fe1c985671443.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_a2f58b866a8ab6c224a1a5ddd6f376c41066033f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/tonychen/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jar="/Users/yu-chen/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_cc406e6652551cbdc6083caeef46031ca6ec5ceb.jar" />
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_bce00dc18cf533551b229583683e910172a04ac6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.3.1_fe9e8ba5da3be7b1c94774731d55cc3a12be406f.jar" />
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_fbe9c3a365e44fe7da2deb30b1fdc8dfd102f231.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jar="/Users/yu-chen/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_f25c8f6ba0c81bcda58418ec768c5473cadf5991.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_62aba0cd86401a6dd377267855a98e5357351a7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_8f05245a7523472d1887c3ae7851b7930a4b8806.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_7a84a579d1a6e18006e5297c1370c40b912ac9fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_a82f3fd71c469bebaefd5df6054c63b8777db561.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_32fb77797b2bb6b5035bf480b8de790ee75b1753.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/IM3514_Project/react-native-navigation/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f80cd1c1226ad216a8c749e9c7379dace29080d5">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/IM3514_Project-react-native-navigation-unspecified_d4d47ffa54a95f9c1288b94d8341d47f8adc327b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_f1e219982daf21f7c836a8115e8b4f5a161baca9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_3d8b9fb979d9b412ac23bd6772394f8733734382.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_99a3c3bfde92c166cf07e17d80e7890569544a7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_281dff6055f744e5fb139fa5f46aedad38c058bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_44d271983200be08f53e0d886eb1a6e5b3c01d63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-toolbar-1.5.4_bbb5de4ff97004941deaf279ce06d306d71beaae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_76edce5605f4a760fccf468fdcbb2b7badd3df5f.jar" />
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_2957f21a2aa2a901981c92fbfb764667b72c5075.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jar="/Users/yu-chen/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/library-2.4.0_033c3c9b107f68b52b47a4c83cb1092499bd97fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/Users/tonychen/Projects/Graduation Topic/Local_Repo_10/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_e466071a63c27b401356bcad4e732cb6c72dda20.jar" />
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_02ad11e2c34407460f063ff79d2404390f295bef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_d9f59b1ecc36b856adbc9e273b759ccc41c99e3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_1b0b578f9d4580b4a841fc1f89f7fa1a5926c7ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_2d12ad8ee937b6077ffd56c215b2169cf6904675.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_d974a8524960c68950adc985849b576088c30526.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_f640c933205d64caf38ac7525d7df61634a91b5a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_9c443d68361f8b555a88759352447b4f75a64c65.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_14ac2e405b4baed258f8616c37a78db866a2df73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_290f1782b8c168577e7efd6863e6ac12ec9d8ff5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/IM3514_Project/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="279750fed3c920d06351dbf32889c1b48203c7ad">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/IM3514_Project-react-native-vector-icons-unspecified_1bca82dc3a7c516f80f79d1bd29bd5e2e7346327.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_ebaa4231e42dd7bf1056cb5604498790ce5b172f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_c1e35033d1e56a205f1780d35ca58f7320fdfea4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_c187faa79f552f4f79c2f257209406b32c81e50f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/IM3514_Project/amazon-cognito-identity-js/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="006c93ed3cba725e4381973e85ae131ab1aeed73">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/IM3514_Project-amazon-cognito-identity-js-unspecified_81e42c9d10aeb24ea82a887ed85a35c897da0ae9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_9a71f4af859292c0d3138c5a7769489f8393edc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_54e6ef2a640ddd17163afcd82a102842318c56b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_7eab893b587034a87894408b2a5e4ace4d2408d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.aurelhubert-ahbottomnavigation-2.0.6_e3deba2aeb2e04a5479cfa6989ca06bcf7bfaf34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-1.5.4_10420f43a13efbd60d71b782d8261a28a2456bd6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/yu-chen/Desktop/IM3514_Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.3.1_87d51c5a069ddb857e55f5c1d6a0edac504514b6.jar" />
     </item>
 
 </items>

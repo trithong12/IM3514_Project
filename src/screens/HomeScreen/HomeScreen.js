@@ -1,10 +1,18 @@
 import React, { Component } from "react";
-import { View, TouchableOpacity } from 'react-native';
+import { View, TouchableOpacity, FlatList } from 'react-native';
 import { Container, Content, Card, CardItem, Text, Body, Button, Right, Left } from "native-base";
-export default class HomeScreen extends Component {
+import { connect } from "react-redux";
+import db from '../../AWS/dynamodb_config';
+
+class HomeScreen extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      requestedHistory: [],
+      receivedHistory: []
+    }
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent)
+    this.loadUseHistory();
   }
 
   onNavigatorEvent = event => {
@@ -18,6 +26,61 @@ export default class HomeScreen extends Component {
 
   componentWillUnmount() {
 
+  }
+
+  loadUseHistory = () => {
+    var requestedHistoryParams = {
+      TableName: "Record",
+      KeyConditionExpression: "#user_id = :user_id",
+      ExpressionAttributeNames: { "#user_id": "user_id" },
+      ExpressionAttributeValues: { ":user_id": this.props.currentUser.email },
+      Limit: 3,
+      ScanIndexForward: false
+    }
+    db.query(requestedHistoryParams, (err, data) => {
+      if (err) {
+        console.log("Query requested history error : ", err);
+      }
+      else {
+        console.log("Query requested history success : ", data);
+        this.setState({
+          requestedHistory: data.Items.map((record, index) => {
+            return {
+              "key": index.toString(),
+              "request_time": record.request_time.split(' ').join('\n'),
+              "receiver_name": record.receiver_name
+            };
+          })
+        })
+      }
+    });
+
+    var receivedHistoryParams = {
+      TableName: "Record",
+      IndexName: "receiver_id-request_time-index",
+      KeyConditionExpression: "#receiver_id = :receiver_id",
+      ExpressionAttributeNames: { "#receiver_id": "receiver_id" },
+      ExpressionAttributeValues: { ":receiver_id": this.props.currentUser.email },
+      Limit: 3,
+      ScanIndexForward: false
+    }
+    db.query(receivedHistoryParams, (err, data) => {
+      if(err){
+        console.log("Query received history error : ", err)
+      }
+      else{
+        console.log("Query received history success : ", data);
+        this.setState({
+          receivedHistory: data.Items.map((record, index) => {
+            return {
+              "key": index.toString(),
+              "request_time": record.request_time.split(' ').join('\n'),
+              "requester_name": record.requester_name
+            };
+          })
+        });
+      }
+    });
   }
 
   startRequestHandler = () => {
@@ -56,7 +119,24 @@ export default class HomeScreen extends Component {
             <CardItem header style={{ alignSelf: "center" }} bordered>
               <Text>您最近的遞送請求記錄</Text>
             </CardItem>
-            <CardItem>
+            <FlatList
+              data={this.state.requestedHistory}
+              renderItem={info => (
+                <CardItem>
+                  <Left>
+                    <Text>{info.item.request_time}</Text>
+                  </Left>
+                  <Body style={{ alignSelf: "center" }}>
+                    <Text note>送出</Text>
+                  </Body>
+                  <Right>
+                    <Text>{info.item.receiver_name}</Text>
+                  </Right>
+                </CardItem>
+              )}
+            />
+
+            {/* <CardItem>
               <Left>
                 <Text>2018-09-16 上午10:00</Text>
               </Left>
@@ -88,7 +168,7 @@ export default class HomeScreen extends Component {
               <Right>
                 <Text>陳小花</Text>
               </Right>
-            </CardItem>
+            </CardItem> */}
             <CardItem footer bordered style={{ alignSelf: "center" }}>
               <TouchableOpacity onPress={this.goToSendHistoryHandler}>
                 <View>
@@ -102,7 +182,23 @@ export default class HomeScreen extends Component {
             <CardItem header style={{ alignSelf: "center" }} bordered>
               <Text>您最近的收件記錄</Text>
             </CardItem>
-            <CardItem>
+            <FlatList
+              data={this.state.receivedHistory}
+              renderItem={info => (
+                <CardItem>
+                  <Left>
+                    <Text>{info.item.request_time}</Text>
+                  </Left>
+                  <Body style={{ alignSelf: "center" }}>
+                    <Text note>收到</Text>
+                  </Body>
+                  <Right>
+                    <Text>{info.item.requester_name}</Text>
+                  </Right>
+                </CardItem>
+              )}
+            />
+            {/* <CardItem>
               <Left>
                 <Text>2018-09-18 下午04:00</Text>
               </Left>
@@ -134,7 +230,7 @@ export default class HomeScreen extends Component {
               <Right>
                 <Text>陳小花</Text>
               </Right>
-            </CardItem>
+            </CardItem> */}
             <CardItem footer bordered style={{ alignSelf: "center" }}>
               <TouchableOpacity onPress={this.goToReceiveHistoryHandler}>
                 <View>
@@ -148,3 +244,11 @@ export default class HomeScreen extends Component {
     );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    currentUser: state.auth.currentUser
+  };
+};
+
+export default connect(mapStateToProps)(HomeScreen);
